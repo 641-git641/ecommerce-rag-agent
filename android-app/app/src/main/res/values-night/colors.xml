@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 深色主题：黑+蓝 -->
+    <color name="primary">#6CB4EE</color>
+    <color name="primary_dark">#4A90CC</color>
+    <color name="primary_light">#8FC8F5</color>
+
+    <color name="secondary">#6CB4EE</color>
+    <color name="secondary_dark">#4A90CC</color>
+
+    <color name="bg_dark">#121216</color>
+    <color name="bg_sidebar">#1A1A20</color>
+    <color name="surface">#1E1E26</color>
+
+    <color name="text_primary">#E8E8EC</color>
+    <color name="text_secondary">#888888</color>
+    <color name="text_hint">#555555</color>
+    <color name="text_sidebar">#CCCCCC</color>
+    <color name="text_sidebar_dim">#666666</color>
+
+    <color name="chat_user_bg">#1E1E26</color>
+    <color name="chat_assistant_bg">#1E1E26</color>
+    <color name="chat_assistant_bubble">#306CB4EE</color>
+    <color name="card_bg">#1E1E26</color>
+    <color name="border_light">#333333</color>
+
+    <!-- 浮岛颜色 - 深色 -->
+    <color name="input_bg">#35FFFFFF</color>
+    <color name="input_stroke">#1AFFFFFF</color>
+    <color name="topbar_bg">#2CFFFFFF</color>
+    <color name="topbar_stroke">#18FFFFFF</color>
+    <color name="send_tint">#6CB4EE</color>
+    <color name="input_icon_tint">#88FFFFFF</color>
+    <color name="input_hint">#44FFFFFF</color>
+    <color name="session_btn_stroke">#33FFFFFF</color>
+</resources>

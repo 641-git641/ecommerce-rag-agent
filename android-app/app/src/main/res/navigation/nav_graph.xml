@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_chat">
+    <!-- 仅保留对话页面，购物车通过独立 Activity 跳转 -->
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.ecommerce.ragagent.ui.chat.ChatFragment"
+        android:label="@string/app_name" />
+</navigation>

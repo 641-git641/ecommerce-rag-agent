@@ -1,0 +1,38 @@
+# ── 环境配置 ──
+.env
+
+# ── Python 缓存 ──
+__pycache__/
+*.pyc
+*.pyo
+
+# ── Git ──
+.git/
+.gitignore
+
+# ── IDE ──
+.idea/
+.vscode/
+
+# ── 运行时数据（由 volume 挂载或首次启动生成）──
+python-rag/chroma_db/
+python-rag/uploads/
+python-rag/profiles/
+
+# ── Android 工程 ──
+android-app/
+
+# ── 文档（仅排除根目录下的技术文档）──
+/TECHNICAL_DOC.md
+/TEST_CASES.md
+
+# ── 日志 ──
+*.log
+logs/
+
+# ── node_modules（如果有）──
+node_modules/
+
+# ── OS ──
+.DS_Store
+Thumbs.db

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 面板头部 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="14dp"
+        android:background="@color/bg_sidebar">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_session_head"
+            android:contentDescription="logo"
+            android:alpha="0.8" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="电商导购助手"
+            android:textColor="@color/text_sidebar"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- 新对话按钮 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_new_chat"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="@string/new_chat"
+            android:textColor="@color/text_sidebar"
+            android:textSize="11sp"
+            app:icon="@drawable/ic_add"
+            app:iconGravity="textStart"
+            app:iconTint="#CCCCCC"
+            app:strokeColor="@color/session_btn_stroke"
+            app:cornerRadius="8dp" />
+
+    </LinearLayout>
+
+    <!-- 会话列表 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_session_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+
+    <TextView
+        android:id="@+id/tv_session_empty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/no_sessions"
+        android:textColor="@color/text_sidebar_dim"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+</LinearLayout>

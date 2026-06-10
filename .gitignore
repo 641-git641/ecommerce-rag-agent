@@ -1,0 +1,33 @@
+# ── 环境配置 ──
+.env
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# ── IDE / 编辑器 ──
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── 运行时数据 ──
+python-rag/chroma_db/
+python-rag/uploads/
+python-rag/profiles/
+
+# ── Android ──
+android-app/.gradle/
+android-app/build/
+android-app/app/build/
+android-app/local.properties
+
+# ── 日志 ──
+*.log
+logs/
+
+# ── OS ──
+.DS_Store
+Thumbs.db

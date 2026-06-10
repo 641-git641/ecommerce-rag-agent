@@ -1,0 +1,3791 @@
+{
+  "nodes": {
+    "product:p_clothes_001": {
+      "id": "product:p_clothes_001",
+      "type": "product",
+      "properties": {
+        "title": "优衣库 U AIRism 棉质宽松圆领短袖T恤 男装 基础纯色上衣",
+        "product_id": "p_clothes_001",
+        "price": 99.0,
+        "brand_name": "优衣库",
+        "category": "服饰运动",
+        "sub_category": "短袖T恤"
+      }
+    },
+    "brand:优衣库": {
+      "id": "brand:优衣库",
+      "type": "brand",
+      "properties": {
+        "name": "优衣库"
+      }
+    },
+    "category:服饰运动": {
+      "id": "category:服饰运动",
+      "type": "category",
+      "properties": {
+        "name": "服饰运动"
+      }
+    },
+    "product:p_clothes_002": {
+      "id": "product:p_clothes_002",
+      "type": "product",
+      "properties": {
+        "title": "优衣库 DRY-EX 超快干圆领短袖T恤 男装 运动训练上衣",
+        "product_id": "p_clothes_002",
+        "price": 129.0,
+        "brand_name": "优衣库",
+        "category": "服饰运动",
+        "sub_category": "短袖T恤"
+      }
+    },
+    "product:p_clothes_003": {
+      "id": "product:p_clothes_003",
+      "type": "product",
+      "properties": {
+        "title": "Nike Dri-FIT 男子训练短袖T恤 速干透气运动上衣",
+        "product_id": "p_clothes_003",
+        "price": 199.0,
+        "brand_name": "耐克",
+        "category": "服饰运动",
+        "sub_category": "短袖T恤"
+      }
+    },
+    "brand:耐克": {
+      "id": "brand:耐克",
+      "type": "brand",
+      "properties": {
+        "name": "耐克"
+      }
+    },
+    "product:p_clothes_004": {
+      "id": "product:p_clothes_004",
+      "type": "product",
+      "properties": {
+        "title": "adidas Essentials 三条纹 男子针织运动长裤 日常休闲收口裤",
+        "product_id": "p_clothes_004",
+        "price": 299.0,
+        "brand_name": "阿迪达斯",
+        "category": "服饰运动",
+        "sub_category": "运动长裤"
+      }
+    },
+    "brand:阿迪达斯": {
+      "id": "brand:阿迪达斯",
+      "type": "brand",
+      "properties": {
+        "name": "阿迪达斯"
+      }
+    },
+    "product:p_clothes_005": {
+      "id": "product:p_clothes_005",
+      "type": "product",
+      "properties": {
+        "title": "李宁 运动生活系列 男子连帽套头卫衣 基础Logo印花上衣",
+        "product_id": "p_clothes_005",
+        "price": 259.0,
+        "brand_name": "李宁",
+        "category": "服饰运动",
+        "sub_category": "卫衣"
+      }
+    },
+    "brand:李宁": {
+      "id": "brand:李宁",
+      "type": "brand",
+      "properties": {
+        "name": "李宁"
+      }
+    },
+    "product:p_clothes_006": {
+      "id": "product:p_clothes_006",
+      "type": "product",
+      "properties": {
+        "title": "Nike Sportswear Club 男子针织运动长裤 基础休闲束脚裤",
+        "product_id": "p_clothes_006",
+        "price": 349.0,
+        "brand_name": "Nike",
+        "category": "服饰运动",
+        "sub_category": "运动长裤"
+      }
+    },
+    "brand:Nike": {
+      "id": "brand:Nike",
+      "type": "brand",
+      "properties": {
+        "name": "Nike"
+      }
+    },
+    "product:p_clothes_007": {
+      "id": "product:p_clothes_007",
+      "type": "product",
+      "properties": {
+        "title": "Nike Air Zoom Pegasus 41 男子缓震跑步鞋日常训练公路跑鞋",
+        "product_id": "p_clothes_007",
+        "price": 899.0,
+        "brand_name": "耐克",
+        "category": "服饰运动",
+        "sub_category": "跑步鞋"
+      }
+    },
+    "product:p_clothes_008": {
+      "id": "product:p_clothes_008",
+      "type": "product",
+      "properties": {
+        "title": "adidas Ultraboost 5 男子缓震跑步鞋针织鞋面日常慢跑训练鞋",
+        "product_id": "p_clothes_008",
+        "price": 1399.0,
+        "brand_name": "阿迪达斯",
+        "category": "服饰运动",
+        "sub_category": "跑步鞋"
+      }
+    },
+    "product:p_clothes_009": {
+      "id": "product:p_clothes_009",
+      "type": "product",
+      "properties": {
+        "title": "HOKA Clifton 9 男子缓震公路跑鞋厚底回弹日常长距离训练鞋",
+        "product_id": "p_clothes_009",
+        "price": 1099.0,
+        "brand_name": "HOKA",
+        "category": "服饰运动",
+        "sub_category": "跑步鞋"
+      }
+    },
+    "brand:HOKA": {
+      "id": "brand:HOKA",
+      "type": "brand",
+      "properties": {
+        "name": "HOKA"
+      }
+    },
+    "product:p_clothes_010": {
+      "id": "product:p_clothes_010",
+      "type": "product",
+      "properties": {
+        "title": "特步 160X 6.0 PRO 碳板竞速跑鞋马拉松训练比赛轻量跑步鞋",
+        "product_id": "p_clothes_010",
+        "price": 999.0,
+        "brand_name": "特步",
+        "category": "服饰运动",
+        "sub_category": "跑步鞋"
+      }
+    },
+    "brand:特步": {
+      "id": "brand:特步",
+      "type": "brand",
+      "properties": {
+        "name": "特步"
+      }
+    },
+    "product:p_clothes_011": {
+      "id": "product:p_clothes_011",
+      "type": "product",
+      "properties": {
+        "title": "Nike LeBron XXI EP 男子中帮实战篮球鞋全掌缓震室内外场地训练鞋",
+        "product_id": "p_clothes_011",
+        "price": 1599.0,
+        "brand_name": "耐克",
+        "category": "服饰运动",
+        "sub_category": "篮球鞋"
+      }
+    },
+    "product:p_clothes_012": {
+      "id": "product:p_clothes_012",
+      "type": "product",
+      "properties": {
+        "title": "安踏 KT9 氮科技实战篮球鞋中帮缓震支撑外场内场训练比赛鞋",
+        "product_id": "p_clothes_012",
+        "price": 999.0,
+        "brand_name": "安踏",
+        "category": "服饰运动",
+        "sub_category": "篮球鞋"
+      }
+    },
+    "brand:安踏": {
+      "id": "brand:安踏",
+      "type": "brand",
+      "properties": {
+        "name": "安踏"
+      }
+    },
+    "product:p_clothes_013": {
+      "id": "product:p_clothes_013",
+      "type": "product",
+      "properties": {
+        "title": "李宁 韦德之道 全城12 实战篮球专业比赛鞋缓震支撑后卫前锋鞋",
+        "product_id": "p_clothes_013",
+        "price": 1199.0,
+        "brand_name": "李宁",
+        "category": "服饰运动",
+        "sub_category": "篮球鞋"
+      }
+    },
+    "product:p_clothes_014": {
+      "id": "product:p_clothes_014",
+      "type": "product",
+      "properties": {
+        "title": "SALOMON X ULTRA 4 GORE-TEX 男子防水徒步鞋轻量抓地登山越野鞋",
+        "product_id": "p_clothes_014",
+        "price": 1198.0,
+        "brand_name": "萨洛蒙",
+        "category": "服饰运动",
+        "sub_category": "徒步鞋"
+      }
+    },
+    "brand:萨洛蒙": {
+      "id": "brand:萨洛蒙",
+      "type": "brand",
+      "properties": {
+        "name": "萨洛蒙"
+      }
+    },
+    "product:p_clothes_015": {
+      "id": "product:p_clothes_015",
+      "type": "product",
+      "properties": {
+        "title": "Merrell MOAB 3 GTX 男子防水登山徒步鞋稳定支撑户外多地形鞋",
+        "product_id": "p_clothes_015",
+        "price": 1099.0,
+        "brand_name": "迈乐",
+        "category": "服饰运动",
+        "sub_category": "徒步鞋"
+      }
+    },
+    "brand:迈乐": {
+      "id": "brand:迈乐",
+      "type": "brand",
+      "properties": {
+        "name": "迈乐"
+      }
+    },
+    "product:p_clothes_016": {
+      "id": "product:p_clothes_016",
+      "type": "product",
+      "properties": {
+        "title": "Lululemon Align 高腰紧身裤 25英寸 女士瑜伽裤柔软裸感运动裤",
+        "product_id": "p_clothes_016",
+        "price": 880.0,
+        "brand_name": "露露乐蒙",
+        "category": "服饰运动",
+        "sub_category": "瑜伽裤"
+      }
+    },
+    "brand:露露乐蒙": {
+      "id": "brand:露露乐蒙",
+      "type": "brand",
+      "properties": {
+        "name": "露露乐蒙"
+      }
+    },
+    "product:p_clothes_017": {
+      "id": "product:p_clothes_017",
+      "type": "product",
+      "properties": {
+        "title": "Arc'teryx Gamma Pant 男子软壳长裤耐磨弹力户外徒步攀爬长裤",
+        "product_id": "p_clothes_017",
+        "price": 1290.0,
+        "brand_name": "始祖鸟",
+        "category": "服饰运动",
+        "sub_category": "户外裤"
+      }
+    },
+    "brand:始祖鸟": {
+      "id": "brand:始祖鸟",
+      "type": "brand",
+      "properties": {
+        "name": "始祖鸟"
+      }
+    },
+    "product:p_clothes_018": {
+      "id": "product:p_clothes_018",
+      "type": "product",
+      "properties": {
+        "title": "The North Face Borealis 28L 多功能通勤户外双肩背包",
+        "product_id": "p_clothes_018",
+        "price": 1098.0,
+        "brand_name": "The North Face",
+        "category": "服饰运动",
+        "sub_category": "背包"
+      }
+    },
+    "brand:The North Face": {
+      "id": "brand:The North Face",
+      "type": "brand",
+      "properties": {
+        "name": "The North Face"
+      }
+    },
+    "product:p_clothes_019": {
+      "id": "product:p_clothes_019",
+      "type": "product",
+      "properties": {
+        "title": "Nike Heritage86 Futura Logo 经典刺绣棒球帽 可调节帽围",
+        "product_id": "p_clothes_019",
+        "price": 169.0,
+        "brand_name": "Nike",
+        "category": "服饰运动",
+        "sub_category": "帽子"
+      }
+    },
+    "product:p_clothes_020": {
+      "id": "product:p_clothes_020",
+      "type": "product",
+      "properties": {
+        "title": "迪卡侬 KALENJI 男子跑步速干T恤轻薄透气基础训练短袖上衣",
+        "product_id": "p_clothes_020",
+        "price": 79.0,
+        "brand_name": "迪卡侬",
+        "category": "服饰运动",
+        "sub_category": "速干T恤"
+      }
+    },
+    "brand:迪卡侬": {
+      "id": "brand:迪卡侬",
+      "type": "brand",
+      "properties": {
+        "name": "迪卡侬"
+      }
+    },
+    "product:p_clothes_021": {
+      "id": "product:p_clothes_021",
+      "type": "product",
+      "properties": {
+        "title": "Nike Dri-FIT Miler 男子速干短袖跑步上衣轻薄透气公路训练T恤",
+        "product_id": "p_clothes_021",
+        "price": 249.0,
+        "brand_name": "耐克",
+        "category": "服饰运动",
+        "sub_category": "速干T恤"
+      }
+    },
+    "product:p_clothes_022": {
+      "id": "product:p_clothes_022",
+      "type": "product",
+      "properties": {
+        "title": "adidas Originals 三叶草 男子连帽卫衣 经典logo套头上衣",
+        "product_id": "p_clothes_022",
+        "price": 459.0,
+        "brand_name": "阿迪达斯",
+        "category": "服饰运动",
+        "sub_category": "卫衣"
+      }
+    },
+    "product:p_clothes_023": {
+      "id": "product:p_clothes_023",
+      "type": "product",
+      "properties": {
+        "title": "优衣库 男装 DRY 速干运动短裤 轻薄透气训练裤",
+        "product_id": "p_clothes_023",
+        "price": 149.0,
+        "brand_name": "优衣库",
+        "category": "服饰运动",
+        "sub_category": "运动短裤"
+      }
+    },
+    "product:p_clothes_024": {
+      "id": "product:p_clothes_024",
+      "type": "product",
+      "properties": {
+        "title": "The North Face Horizon 轻量速干运动鸭舌帽防晒透气户外遮阳帽",
+        "product_id": "p_clothes_024",
+        "price": 199.0,
+        "brand_name": "北面",
+        "category": "服饰运动",
+        "sub_category": "帽子"
+      }
+    },
+    "brand:北面": {
+      "id": "brand:北面",
+      "type": "brand",
+      "properties": {
+        "name": "北面"
+      }
+    },
+    "product:p_clothes_025": {
+      "id": "product:p_clothes_025",
+      "type": "product",
+      "properties": {
+        "title": "Osprey DAYLITE PLUS 日光+ 20L 户外多功能双肩背包轻量通勤包",
+        "product_id": "p_clothes_025",
+        "price": 699.0,
+        "brand_name": "Osprey",
+        "category": "服饰运动",
+        "sub_category": "背包"
+      }
+    },
+    "brand:Osprey": {
+      "id": "brand:Osprey",
+      "type": "brand",
+      "properties": {
+        "name": "Osprey"
+      }
+    },
+    "product:p_digital_001": {
+      "id": "product:p_digital_001",
+      "type": "product",
+      "properties": {
+        "title": "Apple iPhone 17 Pro 6.3英寸 A19 Pro 256GB 全网通旗舰手机",
+        "product_id": "p_digital_001",
+        "price": 8999.0,
+        "brand_name": "Apple 苹果",
+        "category": "数码电子",
+        "sub_category": "智能手机"
+      }
+    },
+    "brand:Apple 苹果": {
+      "id": "brand:Apple 苹果",
+      "type": "brand",
+      "properties": {
+        "name": "Apple 苹果"
+      }
+    },
+    "category:数码电子": {
+      "id": "category:数码电子",
+      "type": "category",
+      "properties": {
+        "name": "数码电子"
+      }
+    },
+    "product:p_digital_002": {
+      "id": "product:p_digital_002",
+      "type": "product",
+      "properties": {
+        "title": "华为HUAWEI Pura 90 Pro 超感光影像曲面屏轻薄旗舰手机12+256GB",
+        "product_id": "p_digital_002",
+        "price": 6999.0,
+        "brand_name": "华为",
+        "category": "数码电子",
+        "sub_category": "智能手机"
+      }
+    },
+    "brand:华为": {
+      "id": "brand:华为",
+      "type": "brand",
+      "properties": {
+        "name": "华为"
+      }
+    },
+    "product:p_digital_003": {
+      "id": "product:p_digital_003",
+      "type": "product",
+      "properties": {
+        "title": "Apple iPhone 17 Pro Max 6.9英寸 A19 Pro 256GB 大屏旗舰手机",
+        "product_id": "p_digital_003",
+        "price": 9999.0,
+        "brand_name": "Apple 苹果",
+        "category": "数码电子",
+        "sub_category": "智能手机"
+      }
+    },
+    "product:p_digital_004": {
+      "id": "product:p_digital_004",
+      "type": "product",
+      "properties": {
+        "title": "华为HUAWEI MateBook 14 鸿蒙版 14英寸轻薄高性能生产力笔记本",
+        "product_id": "p_digital_004",
+        "price": 6299.0,
+        "brand_name": "华为",
+        "category": "数码电子",
+        "sub_category": "笔记本电脑"
+      }
+    },
+    "product:p_digital_005": {
+      "id": "product:p_digital_005",
+      "type": "product",
+      "properties": {
+        "title": "华为HUAWEI MatePad Pro Max 12.6英寸高刷屏多任务办公平板电脑",
+        "product_id": "p_digital_005",
+        "price": 4999.0,
+        "brand_name": "华为",
+        "category": "数码电子",
+        "sub_category": "平板电脑"
+      }
+    },
+    "product:p_digital_006": {
+      "id": "product:p_digital_006",
+      "type": "product",
+      "properties": {
+        "title": "Apple MacBook Pro 14英寸 M5 芯片 16GB 512GB 专业高性能笔记本电脑",
+        "product_id": "p_digital_006",
+        "price": 13499.0,
+        "brand_name": "Apple 苹果",
+        "category": "数码电子",
+        "sub_category": "笔记本电脑"
+      }
+    },
+    "product:p_digital_007": {
+      "id": "product:p_digital_007",
+      "type": "product",
+      "properties": {
+        "title": "华为HUAWEI FreeBuds Pro 5 主动降噪真无线蓝牙耳机高解析音质",
+        "product_id": "p_digital_007",
+        "price": 1699.0,
+        "brand_name": "华为",
+        "category": "数码电子",
+        "sub_category": "真无线耳机"
+      }
+    },
+    "product:p_digital_008": {
+      "id": "product:p_digital_008",
+      "type": "product",
+      "properties": {
+        "title": "小米 17 Ultra 2K高刷屏潜望长焦澎湃芯片影像旗舰5G手机12+256GB",
+        "product_id": "p_digital_008",
+        "price": 7499.0,
+        "brand_name": "小米",
+        "category": "数码电子",
+        "sub_category": "智能手机"
+      }
+    },
+    "brand:小米": {
+      "id": "brand:小米",
+      "type": "brand",
+      "properties": {
+        "name": "小米"
+      }
+    },
+    "product:p_digital_009": {
+      "id": "product:p_digital_009",
+      "type": "product",
+      "properties": {
+        "title": "小米 17 Max 大屏长续航高性能影音游戏5G智能手机12+256GB",
+        "product_id": "p_digital_009",
+        "price": 6499.0,
+        "brand_name": "小米",
+        "category": "数码电子",
+        "sub_category": "智能手机"
+      }
+    },
+    "product:p_digital_010": {
+      "id": "product:p_digital_010",
+      "type": "product",
+      "properties": {
+        "title": "小米 MIX Fold 5 内折大屏旗舰折叠屏手机多任务办公影音利器",
+        "product_id": "p_digital_010",
+        "price": 9999.0,
+        "brand_name": "小米",
+        "category": "数码电子",
+        "sub_category": "智能手机"
+      }
+    },
+    "product:p_digital_011": {
+      "id": "product:p_digital_011",
+      "type": "product",
+      "properties": {
+        "title": "小米平板 8 Pro 12.1英寸高刷大屏影音娱乐学习办公平板电脑",
+        "product_id": "p_digital_011",
+        "price": 3299.0,
+        "brand_name": "小米",
+        "category": "数码电子",
+        "sub_category": "平板电脑"
+      }
+    },
+    "product:p_digital_012": {
+      "id": "product:p_digital_012",
+      "type": "product",
+      "properties": {
+        "title": "Apple MacBook Pro 16英寸 M5 Pro 芯片 32GB 1TB 创意设计师笔记本电脑",
+        "product_id": "p_digital_012",
+        "price": 21999.0,
+        "brand_name": "Apple 苹果",
+        "category": "数码电子",
+        "sub_category": "笔记本电脑"
+      }
+    },
+    "product:p_digital_013": {
+      "id": "product:p_digital_013",
+      "type": "product",
+      "properties": {
+        "title": "Apple iPad Pro 13英寸 (M5) Liquid视网膜 XDR 显示屏 256GB Wi‑Fi 平板电脑",
+        "product_id": "p_digital_013",
+        "price": 8999.0,
+        "brand_name": "苹果",
+        "category": "数码电子",
+        "sub_category": "平板电脑"
+      }
+    },
+    "brand:苹果": {
+      "id": "brand:苹果",
+      "type": "brand",
+      "properties": {
+        "name": "苹果"
+      }
+    },
+    "product:p_digital_014": {
+      "id": "product:p_digital_014",
+      "type": "product",
+      "properties": {
+        "title": "OPPO Find N6 内折柔性大屏旗舰折叠屏手机多任务办公影音体验",
+        "product_id": "p_digital_014",
+        "price": 9699.0,
+        "brand_name": "OPPO",
+        "category": "数码电子",
+        "sub_category": "智能手机"
+      }
+    },
+    "brand:OPPO": {
+      "id": "brand:OPPO",
+      "type": "brand",
+      "properties": {
+        "name": "OPPO"
+      }
+    },
+    "product:p_digital_015": {
+      "id": "product:p_digital_015",
+      "type": "product",
+      "properties": {
+        "title": "OPPO Find X9 Ultra 超大底影像旗舰2K高刷屏长续航5G智能手机",
+        "product_id": "p_digital_015",
+        "price": 6999.0,
+        "brand_name": "OPPO",
+        "category": "数码电子",
+        "sub_category": "智能手机"
+      }
+    },
+    "product:p_digital_016": {
+      "id": "product:p_digital_016",
+      "type": "product",
+      "properties": {
+        "title": "OPPO Reno 16 Pro 轻薄人像摄影高刷屏快充5G智能手机12+256GB",
+        "product_id": "p_digital_016",
+        "price": 3299.0,
+        "brand_name": "OPPO",
+        "category": "数码电子",
+        "sub_category": "智能手机"
+      }
+    },
+    "product:p_digital_017": {
+      "id": "product:p_digital_017",
+      "type": "product",
+      "properties": {
+        "title": "vivo X300 Ultra 旗舰影像2K护眼屏长续航高性能5G智能手机",
+        "product_id": "p_digital_017",
+        "price": 6999.0,
+        "brand_name": "vivo",
+        "category": "数码电子",
+        "sub_category": "智能手机"
+      }
+    },
+    "brand:vivo": {
+      "id": "brand:vivo",
+      "type": "brand",
+      "properties": {
+        "name": "vivo"
+      }
+    },
+    "product:p_digital_018": {
+      "id": "product:p_digital_018",
+      "type": "product",
+      "properties": {
+        "title": "Apple AirPods Pro 3 主动降噪真无线蓝牙耳机 心率监测版",
+        "product_id": "p_digital_018",
+        "price": 1899.0,
+        "brand_name": "Apple 苹果",
+        "category": "数码电子",
+        "sub_category": "真无线耳机"
+      }
+    },
+    "product:p_digital_019": {
+      "id": "product:p_digital_019",
+      "type": "product",
+      "properties": {
+        "title": "vivo Pad 6 Pro 12.1英寸高刷全面屏学习娱乐多任务办公平板电脑",
+        "product_id": "p_digital_019",
+        "price": 3299.0,
+        "brand_name": "vivo",
+        "category": "数码电子",
+        "sub_category": "平板电脑"
+      }
+    },
+    "product:p_digital_020": {
+      "id": "product:p_digital_020",
+      "type": "product",
+      "properties": {
+        "title": "Apple MacBook Air 13英寸 M5 芯片 16GB 512GB 轻薄便携笔记本电脑",
+        "product_id": "p_digital_020",
+        "price": 8499.0,
+        "brand_name": "Apple 苹果",
+        "category": "数码电子",
+        "sub_category": "笔记本电脑"
+      }
+    },
+    "product:p_digital_021": {
+      "id": "product:p_digital_021",
+      "type": "product",
+      "properties": {
+        "title": "华为 MatePad Pro 13.2英寸 柔性OLED高刷屏轻办公创作旗舰平板电脑",
+        "product_id": "p_digital_021",
+        "price": 5199.0,
+        "brand_name": "华为",
+        "category": "数码电子",
+        "sub_category": "平板电脑"
+      }
+    },
+    "product:p_digital_022": {
+      "id": "product:p_digital_022",
+      "type": "product",
+      "properties": {
+        "title": "联想 ThinkPad X1 Carbon Aura AI 元启版2026 14英寸高端商务轻薄本",
+        "product_id": "p_digital_022",
+        "price": 10999.0,
+        "brand_name": "联想",
+        "category": "数码电子",
+        "sub_category": "笔记本电脑"
+      }
+    },
+    "brand:联想": {
+      "id": "brand:联想",
+      "type": "brand",
+      "properties": {
+        "name": "联想"
+      }
+    },
+    "product:p_digital_023": {
+      "id": "product:p_digital_023",
+      "type": "product",
+      "properties": {
+        "title": "联想 ThinkBook 14+ 2026 全面屏高性能轻薄本商务学习笔记本电脑",
+        "product_id": "p_digital_023",
+        "price": 6999.0,
+        "brand_name": "联想",
+        "category": "数码电子",
+        "sub_category": "笔记本电脑"
+      }
+    },
+    "product:p_digital_024": {
+      "id": "product:p_digital_024",
+      "type": "product",
+      "properties": {
+        "title": "Apple iPad Pro 13 英寸 M4 芯片 256GB Wi‑Fi 平板电脑",
+        "product_id": "p_digital_024",
+        "price": 8999.0,
+        "brand_name": "Apple 苹果",
+        "category": "数码电子",
+        "sub_category": "平板电脑"
+      }
+    },
+    "product:p_digital_025": {
+      "id": "product:p_digital_025",
+      "type": "product",
+      "properties": {
+        "title": "Apple iPad Air 11英寸 2026款 M4 芯片 128GB Wi‑Fi 轻薄学习娱乐平板电脑",
+        "product_id": "p_digital_025",
+        "price": 4799.0,
+        "brand_name": "Apple 苹果",
+        "category": "数码电子",
+        "sub_category": "平板电脑"
+      }
+    },
+    "product:p_food_001": {
+      "id": "product:p_food_001",
+      "type": "product",
+      "properties": {
+        "title": "三顿半 数字星球系列 超即溶精品咖啡1-6号 18颗装精品速溶咖啡",
+        "product_id": "p_food_001",
+        "price": 138.0,
+        "brand_name": "三顿半",
+        "category": "食品饮料",
+        "sub_category": "咖啡"
+      }
+    },
+    "brand:三顿半": {
+      "id": "brand:三顿半",
+      "type": "brand",
+      "properties": {
+        "name": "三顿半"
+      }
+    },
+    "category:食品饮料": {
+      "id": "category:食品饮料",
+      "type": "category",
+      "properties": {
+        "name": "食品饮料"
+      }
+    },
+    "product:p_food_002": {
+      "id": "product:p_food_002",
+      "type": "product",
+      "properties": {
+        "title": "雀巢咖啡 1+2原味 三合一速溶咖啡粉100条装即冲奶香咖啡饮品",
+        "product_id": "p_food_002",
+        "price": 60.0,
+        "brand_name": "雀巢",
+        "category": "食品饮料",
+        "sub_category": "咖啡"
+      }
+    },
+    "brand:雀巢": {
+      "id": "brand:雀巢",
+      "type": "brand",
+      "properties": {
+        "name": "雀巢"
+      }
+    },
+    "product:p_food_003": {
+      "id": "product:p_food_003",
+      "type": "product",
+      "properties": {
+        "title": "农夫山泉 东方树叶 无糖乌龙茶饮料500ml 瓶装茶饮低糖替代方案",
+        "product_id": "p_food_003",
+        "price": 4.0,
+        "brand_name": "东方树叶",
+        "category": "食品饮料",
+        "sub_category": "茶饮"
+      }
+    },
+    "brand:东方树叶": {
+      "id": "brand:东方树叶",
+      "type": "brand",
+      "properties": {
+        "name": "东方树叶"
+      }
+    },
+    "product:p_food_004": {
+      "id": "product:p_food_004",
+      "type": "product",
+      "properties": {
+        "title": "元气森林 0糖0脂0卡 白桃味气泡水480ml 碳酸饮料即饮苏打型饮品",
+        "product_id": "p_food_004",
+        "price": 4.5,
+        "brand_name": "元气森林",
+        "category": "食品饮料",
+        "sub_category": "碳酸饮料"
+      }
+    },
+    "brand:元气森林": {
+      "id": "brand:元气森林",
+      "type": "brand",
+      "properties": {
+        "name": "元气森林"
+      }
+    },
+    "product:p_food_005": {
+      "id": "product:p_food_005",
+      "type": "product",
+      "properties": {
+        "title": "东鹏特饮 维生素功能饮料500ml 经典瓶装补充能量含牛磺酸咖啡因",
+        "product_id": "p_food_005",
+        "price": 5.0,
+        "brand_name": "东鹏",
+        "category": "食品饮料",
+        "sub_category": "功能饮料"
+      }
+    },
+    "brand:东鹏": {
+      "id": "brand:东鹏",
+      "type": "brand",
+      "properties": {
+        "name": "东鹏"
+      }
+    },
+    "product:p_food_006": {
+      "id": "product:p_food_006",
+      "type": "product",
+      "properties": {
+        "title": "红牛 维生素功能饮料250ml*24罐整箱补充能量含牛磺酸咖啡因",
+        "product_id": "p_food_006",
+        "price": 120.0,
+        "brand_name": "红牛",
+        "category": "食品饮料",
+        "sub_category": "功能饮料"
+      }
+    },
+    "brand:红牛": {
+      "id": "brand:红牛",
+      "type": "brand",
+      "properties": {
+        "name": "红牛"
+      }
+    },
+    "product:p_food_007": {
+      "id": "product:p_food_007",
+      "type": "product",
+      "properties": {
+        "title": "伊利 金典 有机纯牛奶250ml*12盒 甄选有机奶源常温盒装牛奶",
+        "product_id": "p_food_007",
+        "price": 72.0,
+        "brand_name": "金典",
+        "category": "食品饮料",
+        "sub_category": "牛奶"
+      }
+    },
+    "brand:金典": {
+      "id": "brand:金典",
+      "type": "brand",
+      "properties": {
+        "name": "金典"
+      }
+    },
+    "product:p_food_008": {
+      "id": "product:p_food_008",
+      "type": "product",
+      "properties": {
+        "title": "蒙牛 纯甄 常温风味酸牛奶经典原味200g*10盒发酵乳饮品",
+        "product_id": "p_food_008",
+        "price": 55.0,
+        "brand_name": "纯甄",
+        "category": "食品饮料",
+        "sub_category": "酸奶"
+      }
+    },
+    "brand:纯甄": {
+      "id": "brand:纯甄",
+      "type": "brand",
+      "properties": {
+        "name": "纯甄"
+      }
+    },
+    "product:p_food_009": {
+      "id": "product:p_food_009",
+      "type": "product",
+      "properties": {
+        "title": "三只松鼠 每日坚果750g/30袋 混合坚果仁干果礼盒独立小包装",
+        "product_id": "p_food_009",
+        "price": 99.0,
+        "brand_name": "三只松鼠",
+        "category": "食品饮料",
+        "sub_category": "坚果/零食"
+      }
+    },
+    "brand:三只松鼠": {
+      "id": "brand:三只松鼠",
+      "type": "brand",
+      "properties": {
+        "name": "三只松鼠"
+      }
+    },
+    "product:p_food_010": {
+      "id": "product:p_food_010",
+      "type": "product",
+      "properties": {
+        "title": "良品铺子 肉松饼1000g/箱 松软糕点休闲零食早餐代餐点心",
+        "product_id": "p_food_010",
+        "price": 59.0,
+        "brand_name": "良品铺子",
+        "category": "食品饮料",
+        "sub_category": "坚果/零食"
+      }
+    },
+    "brand:良品铺子": {
+      "id": "brand:良品铺子",
+      "type": "brand",
+      "properties": {
+        "name": "良品铺子"
+      }
+    },
+    "product:p_food_011": {
+      "id": "product:p_food_011",
+      "type": "product",
+      "properties": {
+        "title": "康师傅 经典红烧牛肉面110g*12桶装方便面泡面速食面整箱装",
+        "product_id": "p_food_011",
+        "price": 45.0,
+        "brand_name": "康师傅",
+        "category": "食品饮料",
+        "sub_category": "方便食品"
+      }
+    },
+    "brand:康师傅": {
+      "id": "brand:康师傅",
+      "type": "brand",
+      "properties": {
+        "name": "康师傅"
+      }
+    },
+    "product:p_food_012": {
+      "id": "product:p_food_012",
+      "type": "product",
+      "properties": {
+        "title": "统一 老坛酸菜牛肉面来一桶121g*12桶方便面泡面酸辣风味整箱",
+        "product_id": "p_food_012",
+        "price": 50.0,
+        "brand_name": "统一",
+        "category": "食品饮料",
+        "sub_category": "方便食品"
+      }
+    },
+    "brand:统一": {
+      "id": "brand:统一",
+      "type": "brand",
+      "properties": {
+        "name": "统一"
+      }
+    },
+    "product:p_food_013": {
+      "id": "product:p_food_013",
+      "type": "product",
+      "properties": {
+        "title": "海天 金标生抽1.9L 瓶装酱油 家用厨房调味料酱香鲜味佐餐蘸料",
+        "product_id": "p_food_013",
+        "price": 22.0,
+        "brand_name": "海天",
+        "category": "食品饮料",
+        "sub_category": "调味品"
+      }
+    },
+    "brand:海天": {
+      "id": "brand:海天",
+      "type": "brand",
+      "properties": {
+        "name": "海天"
+      }
+    },
+    "product:p_food_014": {
+      "id": "product:p_food_014",
+      "type": "product",
+      "properties": {
+        "title": "农夫山泉 东方树叶 无糖茉莉花茶饮料 500ml×15 瓶装茶饮",
+        "product_id": "p_food_014",
+        "price": 75.0,
+        "brand_name": "农夫山泉",
+        "category": "食品饮料",
+        "sub_category": "茶饮"
+      }
+    },
+    "brand:农夫山泉": {
+      "id": "brand:农夫山泉",
+      "type": "brand",
+      "properties": {
+        "name": "农夫山泉"
+      }
+    },
+    "product:p_food_015": {
+      "id": "product:p_food_015",
+      "type": "product",
+      "properties": {
+        "title": "可口可乐 零度汽水 无糖碳酸饮料 330ml×24 罐装",
+        "product_id": "p_food_015",
+        "price": 75.0,
+        "brand_name": "可口可乐",
+        "category": "食品饮料",
+        "sub_category": "碳酸饮料"
+      }
+    },
+    "brand:可口可乐": {
+      "id": "brand:可口可乐",
+      "type": "brand",
+      "properties": {
+        "name": "可口可乐"
+      }
+    },
+    "product:p_food_016": {
+      "id": "product:p_food_016",
+      "type": "product",
+      "properties": {
+        "title": "蒙牛 特仑苏 纯牛奶 250ml×16 盒装 常温乳制品",
+        "product_id": "p_food_016",
+        "price": 85.0,
+        "brand_name": "蒙牛",
+        "category": "食品饮料",
+        "sub_category": "牛奶"
+      }
+    },
+    "brand:蒙牛": {
+      "id": "brand:蒙牛",
+      "type": "brand",
+      "properties": {
+        "name": "蒙牛"
+      }
+    },
+    "product:p_food_017": {
+      "id": "product:p_food_017",
+      "type": "product",
+      "properties": {
+        "title": "伊利 安慕希 希腊风味常温酸奶 原味 205g×10 盒装",
+        "product_id": "p_food_017",
+        "price": 68.0,
+        "brand_name": "伊利",
+        "category": "食品饮料",
+        "sub_category": "酸奶"
+      }
+    },
+    "brand:伊利": {
+      "id": "brand:伊利",
+      "type": "brand",
+      "properties": {
+        "name": "伊利"
+      }
+    },
+    "product:p_food_018": {
+      "id": "product:p_food_018",
+      "type": "product",
+      "properties": {
+        "title": "李锦记 特级草菇老抽 1.65L 瓶装酱油 家庭厨房调味品",
+        "product_id": "p_food_018",
+        "price": 29.0,
+        "brand_name": "李锦记",
+        "category": "食品饮料",
+        "sub_category": "调味品"
+      }
+    },
+    "brand:李锦记": {
+      "id": "brand:李锦记",
+      "type": "brand",
+      "properties": {
+        "name": "李锦记"
+      }
+    },
+    "product:p_food_019": {
+      "id": "product:p_food_019",
+      "type": "product",
+      "properties": {
+        "title": "百草味 每日坚果A款 750g/30袋 混合坚果零食礼盒",
+        "product_id": "p_food_019",
+        "price": 118.0,
+        "brand_name": "百草味",
+        "category": "食品饮料",
+        "sub_category": "坚果/零食"
+      }
+    },
+    "brand:百草味": {
+      "id": "brand:百草味",
+      "type": "brand",
+      "properties": {
+        "name": "百草味"
+      }
+    },
+    "product:p_food_020": {
+      "id": "product:p_food_020",
+      "type": "product",
+      "properties": {
+        "title": "日清 合味道 海鲜风味 杯装方便面 79g×12 杯整箱",
+        "product_id": "p_food_020",
+        "price": 69.0,
+        "brand_name": "日清",
+        "category": "食品饮料",
+        "sub_category": "方便食品"
+      }
+    },
+    "brand:日清": {
+      "id": "brand:日清",
+      "type": "brand",
+      "properties": {
+        "name": "日清"
+      }
+    },
+    "product:p_food_021": {
+      "id": "product:p_food_021",
+      "type": "product",
+      "properties": {
+        "title": "康师傅 红烧牛肉面 方便面袋装 114g×5 袋 五连包整袋",
+        "product_id": "p_food_021",
+        "price": 18.9,
+        "brand_name": "康师傅",
+        "category": "食品饮料",
+        "sub_category": "方便食品"
+      }
+    },
+    "product:p_food_022": {
+      "id": "product:p_food_022",
+      "type": "product",
+      "properties": {
+        "title": "三顿半 冷萃超即溶 黑咖啡 6颗装 冷泡即溶精品速溶咖啡",
+        "product_id": "p_food_022",
+        "price": 58.0,
+        "brand_name": "三顿半",
+        "category": "食品饮料",
+        "sub_category": "咖啡"
+      }
+    },
+    "product:p_food_023": {
+      "id": "product:p_food_023",
+      "type": "product",
+      "properties": {
+        "title": "雀巢 金牌 冻干速溶咖啡 100g 瓶装 黑咖啡",
+        "product_id": "p_food_023",
+        "price": 42.0,
+        "brand_name": "雀巢",
+        "category": "食品饮料",
+        "sub_category": "咖啡"
+      }
+    },
+    "product:p_food_024": {
+      "id": "product:p_food_024",
+      "type": "product",
+      "properties": {
+        "title": "元气森林 白葡萄味 苏打气泡水 480ml×12 0糖0脂0卡",
+        "product_id": "p_food_024",
+        "price": 52.0,
+        "brand_name": "元气森林",
+        "category": "食品饮料",
+        "sub_category": "碳酸饮料"
+      }
+    },
+    "product:p_food_025": {
+      "id": "product:p_food_025",
+      "type": "product",
+      "properties": {
+        "title": "农夫山泉 水溶C100 柠檬味饮料 445ml×15 瓶装 维生素C饮品",
+        "product_id": "p_food_025",
+        "price": 89.0,
+        "brand_name": "农夫山泉",
+        "category": "食品饮料",
+        "sub_category": "功能饮料"
+      }
+    },
+    "product:p_beauty_001": {
+      "id": "product:p_beauty_001",
+      "type": "product",
+      "properties": {
+        "title": "雅诗兰黛特润修护肌活精华露淡纹紧致保湿夜间修护抗初老精华30ml",
+        "product_id": "p_beauty_001",
+        "price": 720.0,
+        "brand_name": "雅诗兰黛",
+        "category": "美妆护肤",
+        "sub_category": "精华"
+      }
+    },
+    "brand:雅诗兰黛": {
+      "id": "brand:雅诗兰黛",
+      "type": "brand",
+      "properties": {
+        "name": "雅诗兰黛"
+      }
+    },
+    "category:美妆护肤": {
+      "id": "category:美妆护肤",
+      "type": "category",
+      "properties": {
+        "name": "美妆护肤"
+      }
+    },
+    "product:p_beauty_002": {
+      "id": "product:p_beauty_002",
+      "type": "product",
+      "properties": {
+        "title": "兰蔻小黑瓶全新精华肌底液修护维稳细腻毛孔提亮肤色30ml",
+        "product_id": "p_beauty_002",
+        "price": 760.0,
+        "brand_name": "兰蔻",
+        "category": "美妆护肤",
+        "sub_category": "精华"
+      }
+    },
+    "brand:兰蔻": {
+      "id": "brand:兰蔻",
+      "type": "brand",
+      "properties": {
+        "name": "兰蔻"
+      }
+    },
+    "product:p_beauty_003": {
+      "id": "product:p_beauty_003",
+      "type": "product",
+      "properties": {
+        "title": "SK-II护肤精华露神仙水晶透保湿调理角质收缩毛孔230ml",
+        "product_id": "p_beauty_003",
+        "price": 1690.0,
+        "brand_name": "SK-II",
+        "category": "美妆护肤",
+        "sub_category": "化妆水"
+      }
+    },
+    "brand:SK-II": {
+      "id": "brand:SK-II",
+      "type": "brand",
+      "properties": {
+        "name": "SK-II"
+      }
+    },
+    "product:p_beauty_004": {
+      "id": "product:p_beauty_004",
+      "type": "product",
+      "properties": {
+        "title": "资生堂新红妍肌活精华露红腰子修护维稳强韧肌底精华50ml",
+        "product_id": "p_beauty_004",
+        "price": 590.0,
+        "brand_name": "资生堂",
+        "category": "美妆护肤",
+        "sub_category": "精华"
+      }
+    },
+    "brand:资生堂": {
+      "id": "brand:资生堂",
+      "type": "brand",
+      "properties": {
+        "name": "资生堂"
+      }
+    },
+    "product:p_beauty_005": {
+      "id": "product:p_beauty_005",
+      "type": "product",
+      "properties": {
+        "title": "科颜氏新集焕白均衡亮肤淡斑精华液提亮肤色淡化斑点精华30ml",
+        "product_id": "p_beauty_005",
+        "price": 520.0,
+        "brand_name": "科颜氏",
+        "category": "美妆护肤",
+        "sub_category": "精华"
+      }
+    },
+    "brand:科颜氏": {
+      "id": "brand:科颜氏",
+      "type": "brand",
+      "properties": {
+        "name": "科颜氏"
+      }
+    },
+    "product:p_beauty_006": {
+      "id": "product:p_beauty_006",
+      "type": "product",
+      "properties": {
+        "title": "巴黎欧莱雅新多重防护隔离露水感轻薄高倍防晒修护提亮30ml",
+        "product_id": "p_beauty_006",
+        "price": 170.0,
+        "brand_name": "巴黎欧莱雅",
+        "category": "美妆护肤",
+        "sub_category": "防晒"
+      }
+    },
+    "brand:巴黎欧莱雅": {
+      "id": "brand:巴黎欧莱雅",
+      "type": "brand",
+      "properties": {
+        "name": "巴黎欧莱雅"
+      }
+    },
+    "product:p_beauty_007": {
+      "id": "product:p_beauty_007",
+      "type": "product",
+      "properties": {
+        "title": "薇诺娜舒敏保湿特护霜敏感肌修护屏障舒缓干痒保湿面霜50g",
+        "product_id": "p_beauty_007",
+        "price": 268.0,
+        "brand_name": "薇诺娜",
+        "category": "美妆护肤",
+        "sub_category": "面霜"
+      }
+    },
+    "brand:薇诺娜": {
+      "id": "brand:薇诺娜",
+      "type": "brand",
+      "properties": {
+        "name": "薇诺娜"
+      }
+    },
+    "product:p_beauty_008": {
+      "id": "product:p_beauty_008",
+      "type": "product",
+      "properties": {
+        "title": "玉兰油新生塑颜金纯面霜紧致提拉淡纹保湿抗初老大红瓶50g",
+        "product_id": "p_beauty_008",
+        "price": 239.0,
+        "brand_name": "玉兰油",
+        "category": "美妆护肤",
+        "sub_category": "面霜"
+      }
+    },
+    "brand:玉兰油": {
+      "id": "brand:玉兰油",
+      "type": "brand",
+      "properties": {
+        "name": "玉兰油"
+      }
+    },
+    "product:p_beauty_009": {
+      "id": "product:p_beauty_009",
+      "type": "product",
+      "properties": {
+        "title": "珀莱雅弹润透亮青春精华液双抗精华提亮肤色淡纹保湿精华50ml",
+        "product_id": "p_beauty_009",
+        "price": 280.0,
+        "brand_name": "珀莱雅",
+        "category": "美妆护肤",
+        "sub_category": "精华"
+      }
+    },
+    "brand:珀莱雅": {
+      "id": "brand:珀莱雅",
+      "type": "brand",
+      "properties": {
+        "name": "珀莱雅"
+      }
+    },
+    "product:p_beauty_010": {
+      "id": "product:p_beauty_010",
+      "type": "product",
+      "properties": {
+        "title": "安热沙金灿倍护防晒乳高倍防水防汗清爽户外面部身体防晒60ml",
+        "product_id": "p_beauty_010",
+        "price": 298.0,
+        "brand_name": "安热沙",
+        "category": "美妆护肤",
+        "sub_category": "防晒"
+      }
+    },
+    "brand:安热沙": {
+      "id": "brand:安热沙",
+      "type": "brand",
+      "properties": {
+        "name": "安热沙"
+      }
+    },
+    "product:p_beauty_011": {
+      "id": "product:p_beauty_011",
+      "type": "product",
+      "properties": {
+        "title": "珊珂洗颜专科绵润泡沫洁面乳细腻丰富泡沫温和清洁洁面120g",
+        "product_id": "p_beauty_011",
+        "price": 52.0,
+        "brand_name": "珊珂",
+        "category": "美妆护肤",
+        "sub_category": "洁面"
+      }
+    },
+    "brand:珊珂": {
+      "id": "brand:珊珂",
+      "type": "brand",
+      "properties": {
+        "name": "珊珂"
+      }
+    },
+    "product:p_beauty_012": {
+      "id": "product:p_beauty_012",
+      "type": "product",
+      "properties": {
+        "title": "理肤泉特安舒缓修复霜滋润型敏感肌保湿修护屏障面霜40ml",
+        "product_id": "p_beauty_012",
+        "price": 260.0,
+        "brand_name": "理肤泉",
+        "category": "美妆护肤",
+        "sub_category": "面霜"
+      }
+    },
+    "brand:理肤泉": {
+      "id": "brand:理肤泉",
+      "type": "brand",
+      "properties": {
+        "name": "理肤泉"
+      }
+    },
+    "product:p_beauty_013": {
+      "id": "product:p_beauty_013",
+      "type": "product",
+      "properties": {
+        "title": "方里柔焦蜜粉饼控油定妆细腻粉质隐匿毛孔提亮肤色粉饼7g",
+        "product_id": "p_beauty_013",
+        "price": 99.0,
+        "brand_name": "方里",
+        "category": "美妆护肤",
+        "sub_category": "蜜粉"
+      }
+    },
+    "brand:方里": {
+      "id": "brand:方里",
+      "type": "brand",
+      "properties": {
+        "name": "方里"
+      }
+    },
+    "product:p_beauty_014": {
+      "id": "product:p_beauty_014",
+      "type": "product",
+      "properties": {
+        "title": "花西子空气蜜粉轻盈定妆控油提亮肤色细腻粉质散粉8.5g",
+        "product_id": "p_beauty_014",
+        "price": 169.0,
+        "brand_name": "花西子",
+        "category": "美妆护肤",
+        "sub_category": "蜜粉"
+      }
+    },
+    "brand:花西子": {
+      "id": "brand:花西子",
+      "type": "brand",
+      "properties": {
+        "name": "花西子"
+      }
+    },
+    "product:p_beauty_015": {
+      "id": "product:p_beauty_015",
+      "type": "product",
+      "properties": {
+        "title": "完美日记仿生膜精华唇釉丝绒哑光滋润显色持妆唇部彩妆3g",
+        "product_id": "p_beauty_015",
+        "price": 120.0,
+        "brand_name": "完美日记",
+        "category": "美妆护肤",
+        "sub_category": "唇釉"
+      }
+    },
+    "brand:完美日记": {
+      "id": "brand:完美日记",
+      "type": "brand",
+      "properties": {
+        "name": "完美日记"
+      }
+    },
+    "product:p_beauty_016": {
+      "id": "product:p_beauty_016",
+      "type": "product",
+      "properties": {
+        "title": "AHC塑颜修护全脸眼霜紧致淡纹保湿提亮多效眼周护理30ml",
+        "product_id": "p_beauty_016",
+        "price": 139.0,
+        "brand_name": "AHC",
+        "category": "美妆护肤",
+        "sub_category": "眼霜"
+      }
+    },
+    "brand:AHC": {
+      "id": "brand:AHC",
+      "type": "brand",
+      "properties": {
+        "name": "AHC"
+      }
+    },
+    "product:p_beauty_017": {
+      "id": "product:p_beauty_017",
+      "type": "product",
+      "properties": {
+        "title": "芳珂纳米温和净化卸妆油深层清洁毛孔无添加卸妆液120ml",
+        "product_id": "p_beauty_017",
+        "price": 178.0,
+        "brand_name": "芳珂",
+        "category": "美妆护肤",
+        "sub_category": "卸妆"
+      }
+    },
+    "brand:芳珂": {
+      "id": "brand:芳珂",
+      "type": "brand",
+      "properties": {
+        "name": "芳珂"
+      }
+    },
+    "product:p_beauty_018": {
+      "id": "product:p_beauty_018",
+      "type": "product",
+      "properties": {
+        "title": "The Ordinary烟酰胺10%锌1%精华液平衡油脂淡化毛孔提亮肤色30ml",
+        "product_id": "p_beauty_018",
+        "price": 59.0,
+        "brand_name": "The Ordinary",
+        "category": "美妆护肤",
+        "sub_category": "精华"
+      }
+    },
+    "brand:The Ordinary": {
+      "id": "brand:The Ordinary",
+      "type": "brand",
+      "properties": {
+        "name": "The Ordinary"
+      }
+    },
+    "product:p_beauty_019": {
+      "id": "product:p_beauty_019",
+      "type": "product",
+      "properties": {
+        "title": "兰蔻清滢柔肤水大粉水保湿舒缓干性肌肤柔润爽肤水400ml",
+        "product_id": "p_beauty_019",
+        "price": 582.0,
+        "brand_name": "兰蔻",
+        "category": "美妆护肤",
+        "sub_category": "化妆水"
+      }
+    },
+    "product:p_beauty_020": {
+      "id": "product:p_beauty_020",
+      "type": "product",
+      "properties": {
+        "title": "雅诗兰黛持妆粉底液SPF10PA持久遮瑕控油抗汗清透底妆30ml",
+        "product_id": "p_beauty_020",
+        "price": 440.0,
+        "brand_name": "雅诗兰黛",
+        "category": "美妆护肤",
+        "sub_category": "粉底液"
+      }
+    },
+    "product:p_beauty_021": {
+      "id": "product:p_beauty_021",
+      "type": "product",
+      "properties": {
+        "title": "科颜氏牛油果保湿眼霜滋润补水细腻质地淡化干纹眼周护理28g",
+        "product_id": "p_beauty_021",
+        "price": 320.0,
+        "brand_name": "科颜氏",
+        "category": "美妆护肤",
+        "sub_category": "眼霜"
+      }
+    },
+    "product:p_beauty_022": {
+      "id": "product:p_beauty_022",
+      "type": "product",
+      "properties": {
+        "title": "薇诺娜极润保湿面膜密集补水舒缓修护肌肤屏障涂抹式面膜75g",
+        "product_id": "p_beauty_022",
+        "price": 199.0,
+        "brand_name": "薇诺娜",
+        "category": "美妆护肤",
+        "sub_category": "面膜"
+      }
+    },
+    "product:p_beauty_023": {
+      "id": "product:p_beauty_023",
+      "type": "product",
+      "properties": {
+        "title": "理肤泉特护清盈防晒乳高倍防晒清爽控油易敏肌适用面部防晒50ml",
+        "product_id": "p_beauty_023",
+        "price": 268.0,
+        "brand_name": "理肤泉",
+        "category": "美妆护肤",
+        "sub_category": "防晒"
+      }
+    },
+    "product:p_beauty_024": {
+      "id": "product:p_beauty_024",
+      "type": "product",
+      "properties": {
+        "title": "珀莱雅赋能鲜颜淡纹紧致精华液抗皱紧致提升弹润淡化细纹30ml",
+        "product_id": "p_beauty_024",
+        "price": 300.0,
+        "brand_name": "珀莱雅",
+        "category": "美妆护肤",
+        "sub_category": "精华"
+      }
+    },
+    "product:p_beauty_025": {
+      "id": "product:p_beauty_025",
+      "type": "product",
+      "properties": {
+        "title": "花西子螺黛生花眉笔细节点描顺滑显色防晕染持久双头眉笔0.08g",
+        "product_id": "p_beauty_025",
+        "price": 89.0,
+        "brand_name": "花西子",
+        "category": "美妆护肤",
+        "sub_category": "眉笔"
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": "product:p_clothes_001",
+      "to": "brand:优衣库",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_001",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_002",
+      "to": "brand:优衣库",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_002",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_003",
+      "to": "brand:耐克",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_003",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_004",
+      "to": "brand:阿迪达斯",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_004",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_005",
+      "to": "brand:李宁",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_005",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_006",
+      "to": "brand:Nike",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_006",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_007",
+      "to": "brand:耐克",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_007",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_008",
+      "to": "brand:阿迪达斯",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_008",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_009",
+      "to": "brand:HOKA",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_009",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_010",
+      "to": "brand:特步",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_010",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_011",
+      "to": "brand:耐克",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_011",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_012",
+      "to": "brand:安踏",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_012",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_013",
+      "to": "brand:李宁",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_013",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_014",
+      "to": "brand:萨洛蒙",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_014",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_015",
+      "to": "brand:迈乐",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_015",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_016",
+      "to": "brand:露露乐蒙",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_016",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_017",
+      "to": "brand:始祖鸟",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_017",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_018",
+      "to": "brand:The North Face",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_018",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_019",
+      "to": "brand:Nike",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_019",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_020",
+      "to": "brand:迪卡侬",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_020",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_021",
+      "to": "brand:耐克",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_021",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_022",
+      "to": "brand:阿迪达斯",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_022",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_023",
+      "to": "brand:优衣库",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_023",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_024",
+      "to": "brand:北面",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_024",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_025",
+      "to": "brand:Osprey",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_025",
+      "to": "category:服饰运动",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_001",
+      "to": "brand:Apple 苹果",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_001",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_002",
+      "to": "brand:华为",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_002",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_003",
+      "to": "brand:Apple 苹果",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_003",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_004",
+      "to": "brand:华为",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_004",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_005",
+      "to": "brand:华为",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_005",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_006",
+      "to": "brand:Apple 苹果",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_006",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_007",
+      "to": "brand:华为",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_007",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_008",
+      "to": "brand:小米",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_008",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_009",
+      "to": "brand:小米",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_009",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_010",
+      "to": "brand:小米",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_010",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_011",
+      "to": "brand:小米",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_011",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_012",
+      "to": "brand:Apple 苹果",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_012",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_013",
+      "to": "brand:苹果",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_013",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_014",
+      "to": "brand:OPPO",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_014",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_015",
+      "to": "brand:OPPO",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_015",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_016",
+      "to": "brand:OPPO",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_016",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_017",
+      "to": "brand:vivo",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_017",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_018",
+      "to": "brand:Apple 苹果",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_018",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_019",
+      "to": "brand:vivo",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_019",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_020",
+      "to": "brand:Apple 苹果",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_020",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_021",
+      "to": "brand:华为",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_021",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_022",
+      "to": "brand:联想",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_022",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_023",
+      "to": "brand:联想",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_023",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_024",
+      "to": "brand:Apple 苹果",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_024",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_025",
+      "to": "brand:Apple 苹果",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_025",
+      "to": "category:数码电子",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_001",
+      "to": "brand:三顿半",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_001",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_002",
+      "to": "brand:雀巢",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_002",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_003",
+      "to": "brand:东方树叶",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_003",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_004",
+      "to": "brand:元气森林",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_004",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_005",
+      "to": "brand:东鹏",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_005",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_006",
+      "to": "brand:红牛",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_006",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_007",
+      "to": "brand:金典",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_007",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_008",
+      "to": "brand:纯甄",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_008",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_009",
+      "to": "brand:三只松鼠",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_009",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_010",
+      "to": "brand:良品铺子",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_010",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_011",
+      "to": "brand:康师傅",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_011",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_012",
+      "to": "brand:统一",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_012",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_013",
+      "to": "brand:海天",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_013",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_014",
+      "to": "brand:农夫山泉",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_014",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_015",
+      "to": "brand:可口可乐",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_015",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_016",
+      "to": "brand:蒙牛",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_016",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_017",
+      "to": "brand:伊利",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_017",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_018",
+      "to": "brand:李锦记",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_018",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_019",
+      "to": "brand:百草味",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_019",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_020",
+      "to": "brand:日清",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_020",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_021",
+      "to": "brand:康师傅",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_021",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_022",
+      "to": "brand:三顿半",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_022",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_023",
+      "to": "brand:雀巢",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_023",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_024",
+      "to": "brand:元气森林",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_024",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_025",
+      "to": "brand:农夫山泉",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_025",
+      "to": "category:食品饮料",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_001",
+      "to": "product:p_clothes_002",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_001",
+      "to": "product:p_clothes_003",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_002",
+      "to": "product:p_clothes_003",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_004",
+      "to": "product:p_clothes_006",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_005",
+      "to": "product:p_clothes_022",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_007",
+      "to": "product:p_clothes_008",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_007",
+      "to": "product:p_clothes_009",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_007",
+      "to": "product:p_clothes_010",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_008",
+      "to": "product:p_clothes_009",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_008",
+      "to": "product:p_clothes_010",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_009",
+      "to": "product:p_clothes_010",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_011",
+      "to": "product:p_clothes_012",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_011",
+      "to": "product:p_clothes_013",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_012",
+      "to": "product:p_clothes_013",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_014",
+      "to": "product:p_clothes_015",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_018",
+      "to": "product:p_clothes_025",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_019",
+      "to": "product:p_clothes_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_clothes_020",
+      "to": "product:p_clothes_021",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_001",
+      "to": "product:p_digital_002",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_001",
+      "to": "product:p_digital_003",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_001",
+      "to": "product:p_digital_008",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_001",
+      "to": "product:p_digital_009",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_001",
+      "to": "product:p_digital_010",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_001",
+      "to": "product:p_digital_014",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_001",
+      "to": "product:p_digital_015",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_001",
+      "to": "product:p_digital_016",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_001",
+      "to": "product:p_digital_017",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_002",
+      "to": "product:p_digital_003",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_002",
+      "to": "product:p_digital_008",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_002",
+      "to": "product:p_digital_009",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_002",
+      "to": "product:p_digital_010",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_002",
+      "to": "product:p_digital_014",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_002",
+      "to": "product:p_digital_015",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_002",
+      "to": "product:p_digital_016",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_002",
+      "to": "product:p_digital_017",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_003",
+      "to": "product:p_digital_008",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_003",
+      "to": "product:p_digital_009",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_003",
+      "to": "product:p_digital_010",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_003",
+      "to": "product:p_digital_014",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_003",
+      "to": "product:p_digital_015",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_003",
+      "to": "product:p_digital_016",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_003",
+      "to": "product:p_digital_017",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_008",
+      "to": "product:p_digital_009",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_008",
+      "to": "product:p_digital_010",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_008",
+      "to": "product:p_digital_014",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_008",
+      "to": "product:p_digital_015",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_008",
+      "to": "product:p_digital_016",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_008",
+      "to": "product:p_digital_017",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_009",
+      "to": "product:p_digital_010",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_009",
+      "to": "product:p_digital_014",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_009",
+      "to": "product:p_digital_015",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_009",
+      "to": "product:p_digital_016",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_009",
+      "to": "product:p_digital_017",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_010",
+      "to": "product:p_digital_014",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_010",
+      "to": "product:p_digital_015",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_010",
+      "to": "product:p_digital_016",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_010",
+      "to": "product:p_digital_017",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_014",
+      "to": "product:p_digital_015",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_014",
+      "to": "product:p_digital_016",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_014",
+      "to": "product:p_digital_017",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_015",
+      "to": "product:p_digital_016",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_015",
+      "to": "product:p_digital_017",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_016",
+      "to": "product:p_digital_017",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_004",
+      "to": "product:p_digital_006",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_004",
+      "to": "product:p_digital_012",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_004",
+      "to": "product:p_digital_020",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_004",
+      "to": "product:p_digital_022",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_004",
+      "to": "product:p_digital_023",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_006",
+      "to": "product:p_digital_012",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_006",
+      "to": "product:p_digital_020",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_006",
+      "to": "product:p_digital_022",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_006",
+      "to": "product:p_digital_023",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_012",
+      "to": "product:p_digital_020",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_012",
+      "to": "product:p_digital_022",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_012",
+      "to": "product:p_digital_023",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_020",
+      "to": "product:p_digital_022",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_020",
+      "to": "product:p_digital_023",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_022",
+      "to": "product:p_digital_023",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_005",
+      "to": "product:p_digital_011",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_005",
+      "to": "product:p_digital_013",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_005",
+      "to": "product:p_digital_019",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_005",
+      "to": "product:p_digital_021",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_005",
+      "to": "product:p_digital_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_005",
+      "to": "product:p_digital_025",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_011",
+      "to": "product:p_digital_013",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_011",
+      "to": "product:p_digital_019",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_011",
+      "to": "product:p_digital_021",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_011",
+      "to": "product:p_digital_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_011",
+      "to": "product:p_digital_025",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_013",
+      "to": "product:p_digital_019",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_013",
+      "to": "product:p_digital_021",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_013",
+      "to": "product:p_digital_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_013",
+      "to": "product:p_digital_025",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_019",
+      "to": "product:p_digital_021",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_019",
+      "to": "product:p_digital_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_019",
+      "to": "product:p_digital_025",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_021",
+      "to": "product:p_digital_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_021",
+      "to": "product:p_digital_025",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_024",
+      "to": "product:p_digital_025",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_digital_007",
+      "to": "product:p_digital_018",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_001",
+      "to": "product:p_food_002",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_001",
+      "to": "product:p_food_022",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_001",
+      "to": "product:p_food_023",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_002",
+      "to": "product:p_food_022",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_002",
+      "to": "product:p_food_023",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_022",
+      "to": "product:p_food_023",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_003",
+      "to": "product:p_food_014",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_004",
+      "to": "product:p_food_015",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_004",
+      "to": "product:p_food_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_015",
+      "to": "product:p_food_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_005",
+      "to": "product:p_food_006",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_005",
+      "to": "product:p_food_025",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_006",
+      "to": "product:p_food_025",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_007",
+      "to": "product:p_food_016",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_008",
+      "to": "product:p_food_017",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_009",
+      "to": "product:p_food_010",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_009",
+      "to": "product:p_food_019",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_010",
+      "to": "product:p_food_019",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_011",
+      "to": "product:p_food_012",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_011",
+      "to": "product:p_food_020",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_011",
+      "to": "product:p_food_021",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_012",
+      "to": "product:p_food_020",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_012",
+      "to": "product:p_food_021",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_020",
+      "to": "product:p_food_021",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_food_013",
+      "to": "product:p_food_018",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_001",
+      "to": "brand:雅诗兰黛",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_001",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_002",
+      "to": "brand:兰蔻",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_002",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_003",
+      "to": "brand:SK-II",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_003",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_004",
+      "to": "brand:资生堂",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_004",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_005",
+      "to": "brand:科颜氏",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_005",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_006",
+      "to": "brand:巴黎欧莱雅",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_006",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_007",
+      "to": "brand:薇诺娜",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_007",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_008",
+      "to": "brand:玉兰油",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_008",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_009",
+      "to": "brand:珀莱雅",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_009",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_010",
+      "to": "brand:安热沙",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_010",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_011",
+      "to": "brand:珊珂",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_011",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_012",
+      "to": "brand:理肤泉",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_012",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_013",
+      "to": "brand:方里",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_013",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_014",
+      "to": "brand:花西子",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_014",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_015",
+      "to": "brand:完美日记",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_015",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_016",
+      "to": "brand:AHC",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_016",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_017",
+      "to": "brand:芳珂",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_017",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_018",
+      "to": "brand:The Ordinary",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_018",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_019",
+      "to": "brand:兰蔻",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_019",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_020",
+      "to": "brand:雅诗兰黛",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_020",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_021",
+      "to": "brand:科颜氏",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_021",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_022",
+      "to": "brand:薇诺娜",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_022",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_023",
+      "to": "brand:理肤泉",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_023",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_024",
+      "to": "brand:珀莱雅",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_024",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_025",
+      "to": "brand:花西子",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_025",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_001",
+      "to": "product:p_beauty_002",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_001",
+      "to": "product:p_beauty_004",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_001",
+      "to": "product:p_beauty_005",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_001",
+      "to": "product:p_beauty_009",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_001",
+      "to": "product:p_beauty_018",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_001",
+      "to": "product:p_beauty_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_002",
+      "to": "product:p_beauty_004",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_002",
+      "to": "product:p_beauty_005",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_002",
+      "to": "product:p_beauty_009",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_002",
+      "to": "product:p_beauty_018",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_002",
+      "to": "product:p_beauty_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_004",
+      "to": "product:p_beauty_005",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_004",
+      "to": "product:p_beauty_009",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_004",
+      "to": "product:p_beauty_018",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_004",
+      "to": "product:p_beauty_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_005",
+      "to": "product:p_beauty_009",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_005",
+      "to": "product:p_beauty_018",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_005",
+      "to": "product:p_beauty_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_009",
+      "to": "product:p_beauty_018",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_009",
+      "to": "product:p_beauty_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_018",
+      "to": "product:p_beauty_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_003",
+      "to": "product:p_beauty_019",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_006",
+      "to": "product:p_beauty_010",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_006",
+      "to": "product:p_beauty_023",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_010",
+      "to": "product:p_beauty_023",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_007",
+      "to": "product:p_beauty_008",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_007",
+      "to": "product:p_beauty_012",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_008",
+      "to": "product:p_beauty_012",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_013",
+      "to": "product:p_beauty_014",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_016",
+      "to": "product:p_beauty_021",
+      "relation": "same_sub_category",
+      "properties": {}
+    }
+  ]
+}

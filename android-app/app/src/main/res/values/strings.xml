@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">电商智能导购</string>
+
+    <string name="hint_input">输入问题...</string>
+
+    <string name="btn_session">会话管理</string>
+    <string name="btn_input">输入</string>
+    <string name="btn_cart">购物车</string>
+
+    <string name="new_chat">新对话</string>
+    <string name="mode_agent">Agent</string>
+    <string name="mode_rag">RAG</string>
+    <string name="no_sessions">暂无历史对话</string>
+    <string name="empty_knowledge">知识库为空，请上传文档</string>
+
+    <string name="voice_play">语音播报</string>
+    <string name="voice_stop">停止播放</string>
+    <string name="voice_listening">正在聆听...</string>
+
+    <string name="upload_document">上传文档</string>
+    <string name="delete">删除</string>
+
+    <string name="cart_title">购物车</string>
+    <string name="cart_empty">购物车还是空的</string>
+    <string name="cart_go_shopping">去逛逛</string>
+    <string name="cart_select_all">全选</string>
+    <string name="cart_total">合计：</string>
+    <string name="cart_checkout">去结算</string>
+    <string name="cart_removed">已移除</string>
+    <string name="cart_order_confirm">确认订单信息</string>
+    <string name="cart_contact_name">收货人</string>
+    <string name="cart_contact_phone">联系电话</string>
+    <string name="cart_address">收货地址</string>
+    <string name="cart_btn_cancel">取消</string>
+    <string name="cart_btn_confirm">确认下单</string>
+    <string name="cart_order_success">下单成功！</string>
+    <string name="cart_order_no">订单编号：</string>
+    <string name="cart_select_items">请先勾选商品</string>
+    <string name="cart_fill_info">请填写收货人和地址</string>
+    <string name="cart_order_failed">下单失败</string>
+    <string name="cart_continue_shopping">继续购物</string>
+
+    <string name="max_cards_hint">最多选择2张卡片</string>
+    <string name="card_added">已添加到输入区</string>
+</resources>

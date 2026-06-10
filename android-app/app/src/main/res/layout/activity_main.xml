@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_grain_texture">
+
+    <!-- ====== 会话按钮（独立圆角方形悬浮岛） ====== -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/session_btn_island"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_top_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btn_session_icon"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/ic_session"
+            android:padding="6dp"
+            android:alpha="0.6"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="会话管理"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- ====== 顶栏悬浮岛 ====== -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_bar_bg"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_top_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/session_btn_island"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_session_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="电商导购助手"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_theme_toggle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- 主题切换 -->
+        <ImageView
+            android:id="@+id/btn_theme_toggle"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/ic_theme_toggle"
+            android:padding="6dp"
+            android:alpha="0.6"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="切换主题"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_cart_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_cart_icon"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:src="@drawable/ic_shopping_cart"
+            android:padding="6dp"
+            android:alpha="0.6"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="购物车"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- ====== 对话区域 ====== -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/chat_container"
+        android:name="com.ecommerce.ragagent.ui.chat.ChatFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/input_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar_bg" />
+
+    <!-- ====== 输入栏（悬浮岛毛玻璃） ====== -->
+    <include
+        android:id="@+id/input_bar"
+        layout="@layout/include_input_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- ====== 会话管理遮罩层 ====== -->
+    <View
+        android:id="@+id/session_overlay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/overlay_dim"
+        android:visibility="gone"
+        android:alpha="0"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ====== 会话管理侧面板 ====== -->
+    <FrameLayout
+        android:id="@+id/session_panel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/bg_sidebar"
+        android:visibility="gone"
+        android:translationX="-1000dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/session_overlay_right_anchor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/session_overlay_right_anchor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <!-- ====== 语音录制面板 ====== -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/voice_panel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:alpha="0"
+        android:translationY="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#18FFFFFF"
+        app:strokeColor="#0CFFFFFF"
+        app:strokeWidth="0.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_voice_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/voice_listening"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_voice_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="4dp"
+    android:paddingHorizontal="6dp">
+
+    <!-- 助手头像（左侧） -->
+    <ImageView
+        android:id="@+id/iv_avatar_assistant"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_avatar_assistant"
+        android:tint="@color/primary"
+        android:visibility="gone"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/message_card"
+        app:layout_constraintBottom_toBottomOf="@id/message_card" />
+
+    <!-- 用户头像（右侧） -->
+    <ImageView
+        android:id="@+id/iv_avatar_user"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_avatar_user"
+        android:tint="@color/text_secondary"
+        android:visibility="gone"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/message_card"
+        app:layout_constraintBottom_toBottomOf="@id/message_card" />
+
+    <!-- 聊天气泡 -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/message_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_avatar_user"
+        app:layout_constraintStart_toEndOf="@id/iv_avatar_assistant"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="280dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                android:lineSpacingExtra="2dp" />
+
+            <HorizontalScrollView
+                android:id="@+id/hsv_attached_images"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:scrollbars="none"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/ll_attached_images"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_user_selected_cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_sources"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_metrics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/text_hint"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_agent_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/primary"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- 语音播放（头像下方，仅图标） -->
+    <ImageButton
+        android:id="@+id/btn_voice_play"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_voice_play"
+        android:tint="@color/primary"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/voice_play"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/iv_avatar_assistant"
+        app:layout_constraintEnd_toEndOf="@id/iv_avatar_assistant"
+        app:layout_constraintTop_toBottomOf="@id/iv_avatar_assistant" />
+
+    <!-- ====== 商品卡片浮岛（独立于气泡） ====== -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_island"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp"
+        app:cardBackgroundColor="@color/card_bg"
+        app:layout_constraintEnd_toStartOf="@id/iv_avatar_user"
+        app:layout_constraintStart_toEndOf="@id/iv_avatar_assistant"
+        app:layout_constraintTop_toBottomOf="@id/message_card"
+        android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_product_cards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

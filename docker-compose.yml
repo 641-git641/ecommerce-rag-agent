@@ -1,0 +1,86 @@
+# ============================================================
+# 电商 RAG 系统 — Docker Compose 一键部署
+#
+# 启动:  docker-compose up -d
+# 停止:  docker-compose down
+# 日志:  docker-compose logs -f
+# 重建: docker-compose up -d --build
+# ============================================================
+
+services:
+  # ── MySQL 购物车数据库（MariaDB 轻量替代，200MB vs 500MB，API 完全兼容）─────────
+  mysql:
+    image: mariadb:11
+    container_name: ecommerce-mysql
+    environment:
+      MARIADB_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root123}
+      MARIADB_DATABASE: ecommerce_cart
+      TZ: Asia/Shanghai
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./sql/init_cart.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "mariadb-admin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  # ── Python RAG 核心服务 ──────────────────────────
+  python-rag:
+    build:
+      context: .
+      dockerfile: python-rag/Dockerfile
+    container_name: ecommerce-python-rag
+    ports:
+      - "9000:9000"
+    volumes:
+      - chroma_data:/app/chroma_db
+      - profiles_data:/app/profiles
+      - uploads_data:/app/uploads
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_BASE_URL=${OPENAI_BASE_URL:-https://dashscope.aliyuncs.com/compatible-mode/v1}
+      - LLM_MODEL_NAME=${LLM_MODEL_NAME:-qwen3.7-plus}
+      - GO_SERVER_URL=http://go-server:8080
+      - TZ=Asia/Shanghai
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-s", "-o", "/dev/null", "-w", "%{http_code}", "http://localhost:9000/docs"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 180s
+
+  # ── Go API 网关 + 前端 ──────────────────────────
+  go-server:
+    build:
+      context: .
+      dockerfile: go-server/Dockerfile
+    container_name: ecommerce-go-server
+    ports:
+      - "8080:8080"
+    environment:
+      - PYTHON_RAG_URL=http://python-rag:9000
+      - SERVER_PORT=:8080
+      - GIN_MODE=release
+      - MYSQL_DSN=root:${MYSQL_ROOT_PASSWORD:-root123}@tcp(mysql:3306)/ecommerce_cart?charset=utf8mb4&parseTime=True
+      - TZ=Asia/Shanghai
+    volumes:
+      - go_data:/app/data
+    depends_on:
+      python-rag:
+        condition: service_healthy
+      mysql:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  chroma_data:
+  profiles_data:
+  uploads_data:
+  go_data:
+  mysql_data:
