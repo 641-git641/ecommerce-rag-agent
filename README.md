@@ -104,16 +104,6 @@ adb install app/build/outputs/apk/debug/app-debug.apk
 
 > **注意**：换 WiFi 导致电脑 IP 变化后，需重新编译 APK。
 
-### 三种场景对照
-
-| 场景 | APK 连接目标 | 手机要求 | HOST_IP 配置 |
-|------|------------|---------|-------------|
-| 模拟器 | `10.0.2.2`（宿主机） | 无需手机，模拟器即可 | 自动检测，不用改 |
-| 真机 + 同 WiFi | 电脑局域网 IP | 同一 WiFi | 自动获取，不用改 |
-| 真机 + 云服务器 | 服务器公网 IP | 能上外网即可 | 手动写死服务器 IP |
-
----
-
 # 三、开发者 — 本地裸跑（不用 Docker）
 
 ### 前置条件
@@ -171,64 +161,7 @@ go run .
 
 ---
 
-# 四、通过 GitHub 分发 APK
-
-## 4.1 .gitignore 说明
-
-项目 `.gitignore` 已排除：
-- `.env`（API Key 等敏感信息）
-- `android-app/app/build/`（编译产物，含 APK）
-- `python-rag/chroma_db/`（向量数据库文件）
-- `*.db` / `*.exe`（运行时产物）
-
-## 4.2 推荐方式：GitHub Releases（对外分发）
-
-将 APK 托管在 GitHub Releases 中，用户可以随时下载最新版本：
-
-```bash
-# 1. 编译 release 版 APK（体积更小）
-cd android-app
-./gradlew assembleRelease
-
-# 2. 推送到 GitHub
-git add .
-git commit -m "release: v1.0"
-git tag v1.0
-git push origin main --tags
-```
-
-然后：
-
-1. 打开 GitHub 仓库页面 → **Releases** → **Create a new release**
-2. Tag 选择 `v1.0`
-3. 填写 Release title：`v1.0 — 首次发布`
-4. 将 `android-app/app/build/outputs/apk/release/app-release.apk` 拖拽到附件区域
-5. 点击 **Publish release**
-
-用户访问 `https://github.com/你的用户名/仓库名/releases` 即可下载最新 APK。
-
-## 4.3 备选方式：直接提交 APK 到仓库（简单但不推荐）
-
-如果不想用 Releases，也可以将 APK 纳入版本管理：
-
-```bash
-# 1. 修改 .gitignore，去掉对 APK 的排除
-# 在 .gitignore 中注释或删除 android-app/app/build/
-
-# 2. 将 APK 放到项目根目录
-cp android-app/app/build/outputs/apk/debug/app-debug.apk ./app-debug.apk
-
-# 3. 提交
-git add app-debug.apk
-git commit -m "add APK"
-git push
-```
-
-> **缺点**：APK 较大（~10-20MB），每次更新都会让仓库体积膨胀。建议用 Releases 方式。
-
----
-
-# 五、常用 Docker 命令
+# 四、常用 Docker 命令
 
 ```bash
 docker compose up -d --build   # 构建并启动
@@ -242,7 +175,7 @@ docker stats                    # 查看资源占用
 
 ---
 
-# 六、项目结构
+# 五、项目结构
 
 ```
 ├── python-rag/              # Python RAG 核心服务
