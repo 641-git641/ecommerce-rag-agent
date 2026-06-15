@@ -28,7 +28,7 @@ class ChatRepository(
     private var currentEventSource: EventSource? = null
     
     private val gson = Gson()
-    private val pythonRagUrl get() = ApiClient.pythonRagUrl
+    private val baseUrl get() = ApiClient.getBaseUrl()
     private val goAgentUrl get() = "${ApiClient.getBaseUrl()}api/agent/stream"
 
     val sessionId: String? get() = currentSessionId
@@ -138,7 +138,7 @@ class ChatRepository(
         val requestBody = jsonBody.toRequestBody("application/json; charset=utf-8".toMediaTypeOrNull())
         
         val request = okhttp3.Request.Builder()
-            .url("${pythonRagUrl}chat/stream")
+            .url("${baseUrl}chat/stream")
             .post(requestBody)
             .header("Accept", "text/event-stream")
             .header("Cache-Control", "no-cache")
@@ -493,7 +493,7 @@ class ChatRepository(
                 .build()
 
             val request = okhttp3.Request.Builder()
-                .url("${ApiClient.pythonRagUrl}asr")
+                .url("${baseUrl}asr")
                 .post(multipartBody)
                 .build()
 

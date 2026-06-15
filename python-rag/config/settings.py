@@ -32,7 +32,7 @@ class Settings:
     ASR_MODEL_NAME: str = os.getenv("ASR_MODEL_NAME", "fun-asr-realtime")
     
     # 语音合成配置（DashScope CosyVoice）
-    TTS_MODEL_NAME: str = os.getenv("TTS_MODEL_NAME", "cosyvoice-v3-plus")
+    TTS_MODEL_NAME: str = os.getenv("TTS_MODEL_NAME", "cosyvoice-v3.5-flash")
     TTS_VOICE: str = os.getenv("TTS_VOICE", "longanyang")
     TTS_AUDIO_DIR: str = "./uploads/audio"
     

@@ -44,7 +44,7 @@ services:
     environment:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - OPENAI_BASE_URL=${OPENAI_BASE_URL:-https://dashscope.aliyuncs.com/compatible-mode/v1}
-      - LLM_MODEL_NAME=${LLM_MODEL_NAME:-qwen3.7-plus}
+      - LLM_MODEL_NAME=${LLM_MODEL_NAME:-qwen-turbo}
       - GO_SERVER_URL=http://go-server:8080
       - TZ=Asia/Shanghai
     restart: unless-stopped

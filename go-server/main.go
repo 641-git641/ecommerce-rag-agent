@@ -45,6 +45,8 @@ func main() {
 	// 直接代理（路径与 Python 一致，不修改）
 	r.Any("/voice/playback/*path", h.DirectProxy)
 	r.Any("/product-images/*path", h.DirectProxy)
+	r.Any("/chat/*path", h.DirectProxy)
+	r.Any("/asr", h.DirectProxy)
 
 	api := r.Group("/api")
 	{
