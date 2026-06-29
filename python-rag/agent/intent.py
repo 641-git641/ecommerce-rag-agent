@@ -96,6 +96,18 @@ def classify_query(query: str) -> str:
 def extract_compare_products(query: str) -> Optional[List[str]]:
     """从对比类查询中提取商品名"""
     normalized = query
+
+    # ── 剥离记忆增强后缀（格式: "原问题？ 品类 品牌"）──
+    # 内存模块会在问号后追加品类+品牌词，这部分不是商品名的一部分
+    for sep in ('？', '?'):
+        pos = normalized.find(sep)
+        if pos >= 0:
+            after = normalized[pos + 1:].strip()
+            # 问号后文本短且不含对比/疑问关键词 → 判定为增强后缀
+            if after and len(after) <= 30 and not re.search(r'[？?和与vs对比比较还是]', after):
+                normalized = normalized[:pos + 1]
+            break
+
     parts = re.split(r'\s*(?:和|与|vs\.?|versus|还是|对比|比较)\s*', normalized, flags=re.IGNORECASE)
 
     products = []
@@ -103,10 +115,12 @@ def extract_compare_products(query: str) -> Optional[List[str]]:
         p = p.strip()
         # 去除开头引导词
         p = re.sub(r'^(推荐|哪个|哪款|哪一款)', '', p)
-        # 去除尾部的问句/评价成分（最多两轮，处理 "拍照哪个好" → "拍照" → "" 连锁）
-        TRAILING_PATTERN = r'(怎么选|如何选|选哪个|哪个好|哪个更好|哪个更适合|好|更好|适合|拍照|怎么样)$'
+        # 去除尾部问句/评价成分（贪婪匹配，处理 "阿迪达斯的跑鞋哪个更好？ 跑鞋 Nike" → "阿迪达斯的跑鞋"）
+        p = re.sub(r'(哪个更好|哪个好|哪个更适合|怎么选|如何选|选哪个|哪个更|哪个性价比|哪个值得).*$', '', p)
+        # 去除尾部问句/评价成分（仅末尾，处理短查询如 "拍照哪个好"）
+        TAIL_PATTERN = r'(好|更好|适合|拍照|怎么样)$'
         for _ in range(2):
-            p, n = re.subn(TRAILING_PATTERN, '', p)
+            p, n = re.subn(TAIL_PATTERN, '', p)
             if n == 0:
                 break
         # 去除尾部问号和多余空格

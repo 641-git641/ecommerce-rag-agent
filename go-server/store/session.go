@@ -139,14 +139,15 @@ func (s *SessionStore) Get(id string) (*Session, bool) {
 }
 
 // Delete 删除会话（级联删除消息）
-func (s *SessionStore) Delete(id string) {
-	s.db.Exec(`DELETE FROM sessions WHERE id = ?`, id)
+func (s *SessionStore) Delete(id string) error {
+	_, err := s.db.Exec(`DELETE FROM sessions WHERE id = ?`, id)
+	return err
 }
 
 // SaveMessage 向指定会话追加一条消息
 // 首次保存 user 消息时自动用前 30 字作为标题
 // 如果会话不存在则自动创建（兼容 Python 直接生成 UUID 的场景）
-func (s *SessionStore) SaveMessage(sessionID, role, content, cards, voiceUrl string) {
+func (s *SessionStore) SaveMessage(sessionID, role, content, cards, voiceUrl string) error {
 	// 0. 确保会话存在（Python 侧可能直接用 UUID 创建，Go 侧还没记录）
 	s.ensureSession(sessionID)
 
@@ -157,8 +158,7 @@ func (s *SessionStore) SaveMessage(sessionID, role, content, cards, voiceUrl str
 		sessionID, role, content, cards, voiceUrl,
 	)
 	if err != nil {
-		fmt.Printf("[store] 保存消息失败: %v\n", err)
-		return
+		return fmt.Errorf("save message: %w", err)
 	}
 
 	// 2. 更新 msg_count
@@ -180,6 +180,7 @@ func (s *SessionStore) SaveMessage(sessionID, role, content, cards, voiceUrl str
 			title, sessionID,
 		)
 	}
+	return nil
 }
 
 // ensureSession 确保会话记录存在，不存在则插入（幂等）

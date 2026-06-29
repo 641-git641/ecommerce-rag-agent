@@ -26,7 +26,7 @@ from .planner import decide, MAX_REACT_STEPS
 from .tools import SearchTool, RecommendTool, CompareTool, ClarifyTool, ComboTool
 from .cart_client import CartAPIClient
 from .cart_tool import CartTool
-from api.routes import _enrich_recommendations, _parse_stream_structured
+from shared.stream_utils import _enrich_recommendations, _parse_stream_structured
 
 # 实体桥接触发词：用户说这些词时注入图谱同款/搭配信息
 ENTITY_BRIDGE_TRIGGERS = [
@@ -106,8 +106,6 @@ class Agent:
         最后用图谱补全缺失的 product_id。
         """
         try:
-            from api.routes import _enrich_recommendations
-
             memory = get_memory()
             recs = _parse_stream_structured(answer).get("recommendations", [])
             if not recs and steps:
@@ -169,7 +167,11 @@ class Agent:
 - 不要输出解释、抱歉或前言
 - 简洁友好，1-3句话"""
 
-        answer = self.llm.chat(prompt, temperature=0.3)
+        try:
+            answer = self.llm.chat(prompt, temperature=0.3, purpose="agent_clarify")
+        except Exception as e:
+            print(f"[Agent] _force_clarify LLM 降级: {e}")
+            answer = f"请问您想看什么品类的商品呢？方便告诉我您的预算和偏好吗？"
 
         return {
             "answer": answer,
@@ -428,7 +430,7 @@ class Agent:
         elif intent == "combo":
             result = self._process_combo(enriched_query, session_id, steps, used_tools, start_time)
         elif intent in ("simple", "exclude"):
-            result = self._process_fast(enriched_query, session_id, steps, used_tools, start_time, intent == "exclude")
+            result = self._process_fast(enriched_query, session_id, steps, used_tools, start_time)
         else:
             result = self._process_react(enriched_query, session_id, steps, used_tools, start_time, intent=intent)
 
@@ -506,8 +508,8 @@ class Agent:
 
     # ── 路径实现 ──────────────────────────────────────────────
 
-    def _process_fast(self, query, session_id, steps, used_tools, start_time, is_exclude=False):
-        print(f"[Agent] 快速路径: search → finish (exclude={is_exclude})")
+    def _process_fast(self, query, session_id, steps, used_tools, start_time):
+        print(f"[Agent] 快速路径: search → finish")
 
         step = self._execute_tool("search", {"query": query}, session_id)
         steps.append({"tool": "search", "success": step["success"], "output_preview": step["output"][:200], "raw": step.get("raw", {})})
@@ -547,7 +549,10 @@ class Agent:
                 # 仍不够，fallback 到 ReAct
                 return self._process_react(query, session_id, steps, used_tools, start_time, intent=intent)
 
-        step = self._execute_tool("compare", {"products": products}, session_id)
+        # 提取品类上下文，帮助 CompareTool 限定搜索范围（如 "跑鞋" + "Nike"）
+        from .intent import extract_product_category
+        category = extract_product_category(query)
+        step = self._execute_tool("compare", {"products": products, "category": category}, session_id)
         steps.append({"tool": "compare", "success": step["success"],
                       "output_preview": step["output"][:200], "raw": step.get("raw", {})})
         if step["success"]:
@@ -604,7 +609,7 @@ class Agent:
 
 这个结果是否能回答用户问题？YES 还是 NO？"""
         try:
-            raw = self.llm.chat(prompt, temperature=0.0, max_tokens=64)
+            raw = self.llm.chat(prompt, temperature=0.0, max_tokens=64, purpose="react_reflect")
             if raw.strip().upper().startswith("NO"):
                 return f"结果不足以回答用户问题，应尝试其他工具或策略"
         except Exception as e:

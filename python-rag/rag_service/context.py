@@ -103,7 +103,7 @@ def build_context(retrieved_docs: List, graph=None) -> tuple:
 
     for i, doc in enumerate(retrieved_docs):
         meta = getattr(doc, 'metadata', {}) or {}
-        if meta.get('type') == 'faq' and meta.get('faq_answer'):
+        if meta.get('type') in ('faq', 'faq_q') and meta.get('faq_answer'):
             content = meta['faq_answer'].strip()
         else:
             content = doc.page_content.strip()

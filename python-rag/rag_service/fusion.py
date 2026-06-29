@@ -113,10 +113,15 @@ def mmr_rerank(
 def retrieve_flat(
     vector_store, retrieval_k: int,
     all_queries: List[str], detected_filter: Optional[Dict[str, Any]],
+    k_multiplier: int = 1,
 ) -> List:
-    """普通合并去重检索（RRF 降级/关闭时使用）"""
+    """普通合并去重检索（RRF 降级/关闭时使用）
+
+    使用 retrieval_k * 4 * k_multiplier 倍召回，确保品类/预算过滤后仍有产品多样性。
+    k_multiplier 用于预算查询时扩大检索窗口（×2），给平价品更多曝光机会。
+    """
     all_retrieved_docs = []
     for q in all_queries:
-        docs = vector_store.similarity_search(q, k=retrieval_k, filter=detected_filter)
+        docs = vector_store.similarity_search(q, k=retrieval_k * 4 * k_multiplier, filter=detected_filter)
         all_retrieved_docs.extend(docs)
     return deduplicate_docs(all_retrieved_docs)

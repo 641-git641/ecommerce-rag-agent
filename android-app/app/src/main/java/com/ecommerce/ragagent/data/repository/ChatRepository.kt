@@ -106,13 +106,7 @@ class ChatRepository(
         onError: (Throwable) -> Unit
     ) {
         val sessionId = currentSessionId ?: throw Exception("无活跃会话")
-        currentEventSource = sseClientFactory.create(
-            question = question,
-            sessionId = sessionId,
-            onMessage = onMessage,
-            onDone = onDone,
-            onError = onError
-        ).streamChat(
+        currentEventSource = sseClientFactory.create().streamChat(
             ChatRequest(question, sessionId),
             onMessage,
             onDone,
@@ -133,10 +127,9 @@ class ChatRepository(
         cancelStream()
 
         val sid = currentSessionId ?: ""
-        val escapedQuestion = question.replace("\\", "\\\\").replace("\"", "\\\"").replace("\n", "\\n")
-        val jsonBody = "{\"question\":\"$escapedQuestion\",\"session_id\":\"$sid\"}"
+        val jsonBody = gson.toJson(mapOf("question" to question, "session_id" to sid))
         val requestBody = jsonBody.toRequestBody("application/json; charset=utf-8".toMediaTypeOrNull())
-        
+
         val request = okhttp3.Request.Builder()
             .url("${baseUrl}chat/stream")
             .post(requestBody)
@@ -245,8 +238,7 @@ class ChatRepository(
         cancelStream()
 
         val sid = currentSessionId ?: ""
-        val escapedQuery = question.replace("\\", "\\\\").replace("\"", "\\\"").replace("\n", "\\n")
-        val jsonBody = "{\"query\":\"$escapedQuery\",\"session_id\":\"$sid\"}"
+        val jsonBody = gson.toJson(mapOf("query" to question, "session_id" to sid))
         val requestBody = jsonBody.toRequestBody("application/json; charset=utf-8".toMediaTypeOrNull())
 
         val request = okhttp3.Request.Builder()

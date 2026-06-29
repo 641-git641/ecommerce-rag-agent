@@ -2,6 +2,7 @@
 package handlers
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 	"strconv"
@@ -47,20 +48,24 @@ type OrderReq struct {
 	ContactPhone string `json:"contact_phone"`
 }
 
-// userID 从 query 参数获取，默认值 "default"
-func getUserID(c *gin.Context) string {
+// userID 从 query 参数获取，缺失时返回错误
+func getUserID(c *gin.Context) (string, error) {
 	uid := c.Query("user_id")
 	if uid == "" {
-		uid = "default"
+		return "", fmt.Errorf("user_id is required")
 	}
-	return uid
+	return uid, nil
 }
 
 // ── 购物车 CRUD API ──────────────────────────────────────────
 
 // CartList GET /api/cart/list — 查看购物车
 func (h *CartHandler) CartList(c *gin.Context) {
-	uid := getUserID(c)
+	uid, err := getUserID(c)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
 	summary, err := h.cart.List(uid)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
@@ -72,6 +77,11 @@ func (h *CartHandler) CartList(c *gin.Context) {
 
 // CartAdd POST /api/cart/add — 添加商品到购物车
 func (h *CartHandler) CartAdd(c *gin.Context) {
+	uid, err := getUserID(c)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
 	var req AddCartReq
 	if err := c.ShouldBindJSON(&req); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
@@ -81,7 +91,7 @@ func (h *CartHandler) CartAdd(c *gin.Context) {
 		req.Quantity = 1
 	}
 	// 简单实现：循环调用 Add（每次 quantity+1）来处理指定数量
-	summary, err := h.cart.Add(getUserID(c), req.ProductID, req.ProductName, req.Price)
+	summary, err := h.cart.Add(uid, req.ProductID, req.ProductName, req.Price)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
@@ -89,7 +99,7 @@ func (h *CartHandler) CartAdd(c *gin.Context) {
 	// 如果 quantity > 1，再追加 quantity-1 次
 	if req.Quantity > 1 {
 		for i := 1; i < req.Quantity; i++ {
-			summary, err = h.cart.Add(getUserID(c), req.ProductID, req.ProductName, req.Price)
+			summary, err = h.cart.Add(uid, req.ProductID, req.ProductName, req.Price)
 			if err != nil {
 				break
 			}
@@ -105,7 +115,11 @@ func (h *CartHandler) CartAdd(c *gin.Context) {
 // CartRemove DELETE /api/cart/remove — 移除商品
 // 支持 query: ?product_id=xxx 或 ?product_name=xxx 或 ?index=1
 func (h *CartHandler) CartRemove(c *gin.Context) {
-	userID := getUserID(c)
+	userID, err := getUserID(c)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
 
 	// 按序号删除
 	if indexStr := c.Query("index"); indexStr != "" {
@@ -158,7 +172,11 @@ func (h *CartHandler) CartRemove(c *gin.Context) {
 
 // CartUpdateQty PUT /api/cart/update-qty — 修改数量
 func (h *CartHandler) CartUpdateQty(c *gin.Context) {
-	userID := getUserID(c)
+	userID, err := getUserID(c)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
 
 	// 按 index 定位商品
 	if indexStr := c.Query("index"); indexStr != "" {
@@ -204,7 +222,11 @@ func (h *CartHandler) CartUpdateQty(c *gin.Context) {
 
 // CartToggleSelect POST /api/cart/toggle-select — 切换勾选
 func (h *CartHandler) CartToggleSelect(c *gin.Context) {
-	userID := getUserID(c)
+	userID, err := getUserID(c)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
 	var req struct {
 		ProductID string `json:"product_id" binding:"required"`
 	}
@@ -222,7 +244,12 @@ func (h *CartHandler) CartToggleSelect(c *gin.Context) {
 
 // CartClear DELETE /api/cart/clear — 清空购物车
 func (h *CartHandler) CartClear(c *gin.Context) {
-	if err := h.cart.Clear(getUserID(c)); err != nil {
+	uid, err := getUserID(c)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+	if err := h.cart.Clear(uid); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
 	}
@@ -233,7 +260,12 @@ func (h *CartHandler) CartClear(c *gin.Context) {
 
 // CartOrderPreview GET /api/cart/order/preview — 订单预览
 func (h *CartHandler) CartOrderPreview(c *gin.Context) {
-	summary, err := h.cart.PreviewOrder(getUserID(c))
+	uid, err := getUserID(c)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+	summary, err := h.cart.PreviewOrder(uid)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
@@ -243,12 +275,17 @@ func (h *CartHandler) CartOrderPreview(c *gin.Context) {
 
 // CartOrderConfirm POST /api/cart/order/confirm — 确认下单
 func (h *CartHandler) CartOrderConfirm(c *gin.Context) {
+	uid, err := getUserID(c)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
 	var req OrderReq
 	if err := c.ShouldBindJSON(&req); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
-	result, err := h.cart.CreateOrder(getUserID(c), req.Address, req.ContactName, req.ContactPhone)
+	result, err := h.cart.CreateOrder(uid, req.Address, req.ContactName, req.ContactPhone)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return

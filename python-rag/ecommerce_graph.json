@@ -1,5 +1,438 @@
 {
   "nodes": {
+    "product:p_beauty_001": {
+      "id": "product:p_beauty_001",
+      "type": "product",
+      "properties": {
+        "title": "雅诗兰黛特润修护肌活精华露淡纹紧致保湿夜间修护抗初老精华30ml",
+        "product_id": "p_beauty_001",
+        "price": 720.0,
+        "brand_name": "雅诗兰黛",
+        "category": "美妆护肤",
+        "sub_category": "精华"
+      }
+    },
+    "brand:雅诗兰黛": {
+      "id": "brand:雅诗兰黛",
+      "type": "brand",
+      "properties": {
+        "name": "雅诗兰黛"
+      }
+    },
+    "category:美妆护肤": {
+      "id": "category:美妆护肤",
+      "type": "category",
+      "properties": {
+        "name": "美妆护肤"
+      }
+    },
+    "product:p_beauty_002": {
+      "id": "product:p_beauty_002",
+      "type": "product",
+      "properties": {
+        "title": "兰蔻小黑瓶全新精华肌底液修护维稳细腻毛孔提亮肤色30ml",
+        "product_id": "p_beauty_002",
+        "price": 760.0,
+        "brand_name": "兰蔻",
+        "category": "美妆护肤",
+        "sub_category": "精华"
+      }
+    },
+    "brand:兰蔻": {
+      "id": "brand:兰蔻",
+      "type": "brand",
+      "properties": {
+        "name": "兰蔻"
+      }
+    },
+    "product:p_beauty_003": {
+      "id": "product:p_beauty_003",
+      "type": "product",
+      "properties": {
+        "title": "SK-II护肤精华露神仙水晶透保湿调理角质收缩毛孔230ml",
+        "product_id": "p_beauty_003",
+        "price": 1690.0,
+        "brand_name": "SK-II",
+        "category": "美妆护肤",
+        "sub_category": "化妆水"
+      }
+    },
+    "brand:SK-II": {
+      "id": "brand:SK-II",
+      "type": "brand",
+      "properties": {
+        "name": "SK-II"
+      }
+    },
+    "product:p_beauty_004": {
+      "id": "product:p_beauty_004",
+      "type": "product",
+      "properties": {
+        "title": "资生堂新红妍肌活精华露红腰子修护维稳强韧肌底精华50ml",
+        "product_id": "p_beauty_004",
+        "price": 590.0,
+        "brand_name": "资生堂",
+        "category": "美妆护肤",
+        "sub_category": "精华"
+      }
+    },
+    "brand:资生堂": {
+      "id": "brand:资生堂",
+      "type": "brand",
+      "properties": {
+        "name": "资生堂"
+      }
+    },
+    "product:p_beauty_005": {
+      "id": "product:p_beauty_005",
+      "type": "product",
+      "properties": {
+        "title": "科颜氏新集焕白均衡亮肤淡斑精华液提亮肤色淡化斑点精华30ml",
+        "product_id": "p_beauty_005",
+        "price": 520.0,
+        "brand_name": "科颜氏",
+        "category": "美妆护肤",
+        "sub_category": "精华"
+      }
+    },
+    "brand:科颜氏": {
+      "id": "brand:科颜氏",
+      "type": "brand",
+      "properties": {
+        "name": "科颜氏"
+      }
+    },
+    "product:p_beauty_006": {
+      "id": "product:p_beauty_006",
+      "type": "product",
+      "properties": {
+        "title": "巴黎欧莱雅新多重防护隔离露水感轻薄高倍防晒修护提亮30ml",
+        "product_id": "p_beauty_006",
+        "price": 170.0,
+        "brand_name": "巴黎欧莱雅",
+        "category": "美妆护肤",
+        "sub_category": "防晒"
+      }
+    },
+    "brand:巴黎欧莱雅": {
+      "id": "brand:巴黎欧莱雅",
+      "type": "brand",
+      "properties": {
+        "name": "巴黎欧莱雅"
+      }
+    },
+    "product:p_beauty_007": {
+      "id": "product:p_beauty_007",
+      "type": "product",
+      "properties": {
+        "title": "薇诺娜舒敏保湿特护霜敏感肌修护屏障舒缓干痒保湿面霜50g",
+        "product_id": "p_beauty_007",
+        "price": 268.0,
+        "brand_name": "薇诺娜",
+        "category": "美妆护肤",
+        "sub_category": "面霜"
+      }
+    },
+    "brand:薇诺娜": {
+      "id": "brand:薇诺娜",
+      "type": "brand",
+      "properties": {
+        "name": "薇诺娜"
+      }
+    },
+    "product:p_beauty_008": {
+      "id": "product:p_beauty_008",
+      "type": "product",
+      "properties": {
+        "title": "玉兰油新生塑颜金纯面霜紧致提拉淡纹保湿抗初老大红瓶50g",
+        "product_id": "p_beauty_008",
+        "price": 239.0,
+        "brand_name": "玉兰油",
+        "category": "美妆护肤",
+        "sub_category": "面霜"
+      }
+    },
+    "brand:玉兰油": {
+      "id": "brand:玉兰油",
+      "type": "brand",
+      "properties": {
+        "name": "玉兰油"
+      }
+    },
+    "product:p_beauty_009": {
+      "id": "product:p_beauty_009",
+      "type": "product",
+      "properties": {
+        "title": "珀莱雅弹润透亮青春精华液双抗精华提亮肤色淡纹保湿精华50ml",
+        "product_id": "p_beauty_009",
+        "price": 280.0,
+        "brand_name": "珀莱雅",
+        "category": "美妆护肤",
+        "sub_category": "精华"
+      }
+    },
+    "brand:珀莱雅": {
+      "id": "brand:珀莱雅",
+      "type": "brand",
+      "properties": {
+        "name": "珀莱雅"
+      }
+    },
+    "product:p_beauty_010": {
+      "id": "product:p_beauty_010",
+      "type": "product",
+      "properties": {
+        "title": "安热沙金灿倍护防晒乳高倍防水防汗清爽户外面部身体防晒60ml",
+        "product_id": "p_beauty_010",
+        "price": 298.0,
+        "brand_name": "安热沙",
+        "category": "美妆护肤",
+        "sub_category": "防晒"
+      }
+    },
+    "brand:安热沙": {
+      "id": "brand:安热沙",
+      "type": "brand",
+      "properties": {
+        "name": "安热沙"
+      }
+    },
+    "product:p_beauty_011": {
+      "id": "product:p_beauty_011",
+      "type": "product",
+      "properties": {
+        "title": "珊珂洗颜专科绵润泡沫洁面乳细腻丰富泡沫温和清洁洁面120g",
+        "product_id": "p_beauty_011",
+        "price": 52.0,
+        "brand_name": "珊珂",
+        "category": "美妆护肤",
+        "sub_category": "洁面"
+      }
+    },
+    "brand:珊珂": {
+      "id": "brand:珊珂",
+      "type": "brand",
+      "properties": {
+        "name": "珊珂"
+      }
+    },
+    "product:p_beauty_012": {
+      "id": "product:p_beauty_012",
+      "type": "product",
+      "properties": {
+        "title": "理肤泉特安舒缓修复霜滋润型敏感肌保湿修护屏障面霜40ml",
+        "product_id": "p_beauty_012",
+        "price": 260.0,
+        "brand_name": "理肤泉",
+        "category": "美妆护肤",
+        "sub_category": "面霜"
+      }
+    },
+    "brand:理肤泉": {
+      "id": "brand:理肤泉",
+      "type": "brand",
+      "properties": {
+        "name": "理肤泉"
+      }
+    },
+    "product:p_beauty_013": {
+      "id": "product:p_beauty_013",
+      "type": "product",
+      "properties": {
+        "title": "方里柔焦蜜粉饼控油定妆细腻粉质隐匿毛孔提亮肤色粉饼7g",
+        "product_id": "p_beauty_013",
+        "price": 99.0,
+        "brand_name": "方里",
+        "category": "美妆护肤",
+        "sub_category": "蜜粉"
+      }
+    },
+    "brand:方里": {
+      "id": "brand:方里",
+      "type": "brand",
+      "properties": {
+        "name": "方里"
+      }
+    },
+    "product:p_beauty_014": {
+      "id": "product:p_beauty_014",
+      "type": "product",
+      "properties": {
+        "title": "花西子空气蜜粉轻盈定妆控油提亮肤色细腻粉质散粉8.5g",
+        "product_id": "p_beauty_014",
+        "price": 169.0,
+        "brand_name": "花西子",
+        "category": "美妆护肤",
+        "sub_category": "蜜粉"
+      }
+    },
+    "brand:花西子": {
+      "id": "brand:花西子",
+      "type": "brand",
+      "properties": {
+        "name": "花西子"
+      }
+    },
+    "product:p_beauty_015": {
+      "id": "product:p_beauty_015",
+      "type": "product",
+      "properties": {
+        "title": "完美日记仿生膜精华唇釉丝绒哑光滋润显色持妆唇部彩妆3g",
+        "product_id": "p_beauty_015",
+        "price": 120.0,
+        "brand_name": "完美日记",
+        "category": "美妆护肤",
+        "sub_category": "唇釉"
+      }
+    },
+    "brand:完美日记": {
+      "id": "brand:完美日记",
+      "type": "brand",
+      "properties": {
+        "name": "完美日记"
+      }
+    },
+    "product:p_beauty_016": {
+      "id": "product:p_beauty_016",
+      "type": "product",
+      "properties": {
+        "title": "AHC塑颜修护全脸眼霜紧致淡纹保湿提亮多效眼周护理30ml",
+        "product_id": "p_beauty_016",
+        "price": 139.0,
+        "brand_name": "AHC",
+        "category": "美妆护肤",
+        "sub_category": "眼霜"
+      }
+    },
+    "brand:AHC": {
+      "id": "brand:AHC",
+      "type": "brand",
+      "properties": {
+        "name": "AHC"
+      }
+    },
+    "product:p_beauty_017": {
+      "id": "product:p_beauty_017",
+      "type": "product",
+      "properties": {
+        "title": "芳珂纳米温和净化卸妆油深层清洁毛孔无添加卸妆液120ml",
+        "product_id": "p_beauty_017",
+        "price": 178.0,
+        "brand_name": "芳珂",
+        "category": "美妆护肤",
+        "sub_category": "卸妆"
+      }
+    },
+    "brand:芳珂": {
+      "id": "brand:芳珂",
+      "type": "brand",
+      "properties": {
+        "name": "芳珂"
+      }
+    },
+    "product:p_beauty_018": {
+      "id": "product:p_beauty_018",
+      "type": "product",
+      "properties": {
+        "title": "The Ordinary烟酰胺10%锌1%精华液平衡油脂淡化毛孔提亮肤色30ml",
+        "product_id": "p_beauty_018",
+        "price": 59.0,
+        "brand_name": "The Ordinary",
+        "category": "美妆护肤",
+        "sub_category": "精华"
+      }
+    },
+    "brand:The Ordinary": {
+      "id": "brand:The Ordinary",
+      "type": "brand",
+      "properties": {
+        "name": "The Ordinary"
+      }
+    },
+    "product:p_beauty_019": {
+      "id": "product:p_beauty_019",
+      "type": "product",
+      "properties": {
+        "title": "兰蔻清滢柔肤水大粉水保湿舒缓干性肌肤柔润爽肤水400ml",
+        "product_id": "p_beauty_019",
+        "price": 582.0,
+        "brand_name": "兰蔻",
+        "category": "美妆护肤",
+        "sub_category": "化妆水"
+      }
+    },
+    "product:p_beauty_020": {
+      "id": "product:p_beauty_020",
+      "type": "product",
+      "properties": {
+        "title": "雅诗兰黛持妆粉底液SPF10PA持久遮瑕控油抗汗清透底妆30ml",
+        "product_id": "p_beauty_020",
+        "price": 440.0,
+        "brand_name": "雅诗兰黛",
+        "category": "美妆护肤",
+        "sub_category": "粉底液"
+      }
+    },
+    "product:p_beauty_021": {
+      "id": "product:p_beauty_021",
+      "type": "product",
+      "properties": {
+        "title": "科颜氏牛油果保湿眼霜滋润补水细腻质地淡化干纹眼周护理28g",
+        "product_id": "p_beauty_021",
+        "price": 320.0,
+        "brand_name": "科颜氏",
+        "category": "美妆护肤",
+        "sub_category": "眼霜"
+      }
+    },
+    "product:p_beauty_022": {
+      "id": "product:p_beauty_022",
+      "type": "product",
+      "properties": {
+        "title": "薇诺娜极润保湿面膜密集补水舒缓修护肌肤屏障涂抹式面膜75g",
+        "product_id": "p_beauty_022",
+        "price": 199.0,
+        "brand_name": "薇诺娜",
+        "category": "美妆护肤",
+        "sub_category": "面膜"
+      }
+    },
+    "product:p_beauty_023": {
+      "id": "product:p_beauty_023",
+      "type": "product",
+      "properties": {
+        "title": "理肤泉特护清盈防晒乳高倍防晒清爽控油易敏肌适用面部防晒50ml",
+        "product_id": "p_beauty_023",
+        "price": 268.0,
+        "brand_name": "理肤泉",
+        "category": "美妆护肤",
+        "sub_category": "防晒"
+      }
+    },
+    "product:p_beauty_024": {
+      "id": "product:p_beauty_024",
+      "type": "product",
+      "properties": {
+        "title": "珀莱雅赋能鲜颜淡纹紧致精华液抗皱紧致提升弹润淡化细纹30ml",
+        "product_id": "p_beauty_024",
+        "price": 300.0,
+        "brand_name": "珀莱雅",
+        "category": "美妆护肤",
+        "sub_category": "精华"
+      }
+    },
+    "product:p_beauty_025": {
+      "id": "product:p_beauty_025",
+      "type": "product",
+      "properties": {
+        "title": "花西子螺黛生花眉笔细节点描顺滑显色防晕染持久双头眉笔0.08g",
+        "product_id": "p_beauty_025",
+        "price": 89.0,
+        "brand_name": "花西子",
+        "category": "美妆护肤",
+        "sub_category": "眉笔"
+      }
+    },
     "product:p_clothes_001": {
       "id": "product:p_clothes_001",
       "type": "product",
@@ -1221,442 +1654,309 @@
         "category": "食品饮料",
         "sub_category": "功能饮料"
       }
-    },
-    "product:p_beauty_001": {
-      "id": "product:p_beauty_001",
-      "type": "product",
-      "properties": {
-        "title": "雅诗兰黛特润修护肌活精华露淡纹紧致保湿夜间修护抗初老精华30ml",
-        "product_id": "p_beauty_001",
-        "price": 720.0,
-        "brand_name": "雅诗兰黛",
-        "category": "美妆护肤",
-        "sub_category": "精华"
-      }
-    },
-    "brand:雅诗兰黛": {
-      "id": "brand:雅诗兰黛",
-      "type": "brand",
-      "properties": {
-        "name": "雅诗兰黛"
-      }
-    },
-    "category:美妆护肤": {
-      "id": "category:美妆护肤",
-      "type": "category",
-      "properties": {
-        "name": "美妆护肤"
-      }
-    },
-    "product:p_beauty_002": {
-      "id": "product:p_beauty_002",
-      "type": "product",
-      "properties": {
-        "title": "兰蔻小黑瓶全新精华肌底液修护维稳细腻毛孔提亮肤色30ml",
-        "product_id": "p_beauty_002",
-        "price": 760.0,
-        "brand_name": "兰蔻",
-        "category": "美妆护肤",
-        "sub_category": "精华"
-      }
-    },
-    "brand:兰蔻": {
-      "id": "brand:兰蔻",
-      "type": "brand",
-      "properties": {
-        "name": "兰蔻"
-      }
-    },
-    "product:p_beauty_003": {
-      "id": "product:p_beauty_003",
-      "type": "product",
-      "properties": {
-        "title": "SK-II护肤精华露神仙水晶透保湿调理角质收缩毛孔230ml",
-        "product_id": "p_beauty_003",
-        "price": 1690.0,
-        "brand_name": "SK-II",
-        "category": "美妆护肤",
-        "sub_category": "化妆水"
-      }
-    },
-    "brand:SK-II": {
-      "id": "brand:SK-II",
-      "type": "brand",
-      "properties": {
-        "name": "SK-II"
-      }
-    },
-    "product:p_beauty_004": {
-      "id": "product:p_beauty_004",
-      "type": "product",
-      "properties": {
-        "title": "资生堂新红妍肌活精华露红腰子修护维稳强韧肌底精华50ml",
-        "product_id": "p_beauty_004",
-        "price": 590.0,
-        "brand_name": "资生堂",
-        "category": "美妆护肤",
-        "sub_category": "精华"
-      }
-    },
-    "brand:资生堂": {
-      "id": "brand:资生堂",
-      "type": "brand",
-      "properties": {
-        "name": "资生堂"
-      }
-    },
-    "product:p_beauty_005": {
-      "id": "product:p_beauty_005",
-      "type": "product",
-      "properties": {
-        "title": "科颜氏新集焕白均衡亮肤淡斑精华液提亮肤色淡化斑点精华30ml",
-        "product_id": "p_beauty_005",
-        "price": 520.0,
-        "brand_name": "科颜氏",
-        "category": "美妆护肤",
-        "sub_category": "精华"
-      }
-    },
-    "brand:科颜氏": {
-      "id": "brand:科颜氏",
-      "type": "brand",
-      "properties": {
-        "name": "科颜氏"
-      }
-    },
-    "product:p_beauty_006": {
-      "id": "product:p_beauty_006",
-      "type": "product",
-      "properties": {
-        "title": "巴黎欧莱雅新多重防护隔离露水感轻薄高倍防晒修护提亮30ml",
-        "product_id": "p_beauty_006",
-        "price": 170.0,
-        "brand_name": "巴黎欧莱雅",
-        "category": "美妆护肤",
-        "sub_category": "防晒"
-      }
-    },
-    "brand:巴黎欧莱雅": {
-      "id": "brand:巴黎欧莱雅",
-      "type": "brand",
-      "properties": {
-        "name": "巴黎欧莱雅"
-      }
-    },
-    "product:p_beauty_007": {
-      "id": "product:p_beauty_007",
-      "type": "product",
-      "properties": {
-        "title": "薇诺娜舒敏保湿特护霜敏感肌修护屏障舒缓干痒保湿面霜50g",
-        "product_id": "p_beauty_007",
-        "price": 268.0,
-        "brand_name": "薇诺娜",
-        "category": "美妆护肤",
-        "sub_category": "面霜"
-      }
-    },
-    "brand:薇诺娜": {
-      "id": "brand:薇诺娜",
-      "type": "brand",
-      "properties": {
-        "name": "薇诺娜"
-      }
-    },
-    "product:p_beauty_008": {
-      "id": "product:p_beauty_008",
-      "type": "product",
-      "properties": {
-        "title": "玉兰油新生塑颜金纯面霜紧致提拉淡纹保湿抗初老大红瓶50g",
-        "product_id": "p_beauty_008",
-        "price": 239.0,
-        "brand_name": "玉兰油",
-        "category": "美妆护肤",
-        "sub_category": "面霜"
-      }
-    },
-    "brand:玉兰油": {
-      "id": "brand:玉兰油",
-      "type": "brand",
-      "properties": {
-        "name": "玉兰油"
-      }
-    },
-    "product:p_beauty_009": {
-      "id": "product:p_beauty_009",
-      "type": "product",
-      "properties": {
-        "title": "珀莱雅弹润透亮青春精华液双抗精华提亮肤色淡纹保湿精华50ml",
-        "product_id": "p_beauty_009",
-        "price": 280.0,
-        "brand_name": "珀莱雅",
-        "category": "美妆护肤",
-        "sub_category": "精华"
-      }
-    },
-    "brand:珀莱雅": {
-      "id": "brand:珀莱雅",
-      "type": "brand",
-      "properties": {
-        "name": "珀莱雅"
-      }
-    },
-    "product:p_beauty_010": {
-      "id": "product:p_beauty_010",
-      "type": "product",
-      "properties": {
-        "title": "安热沙金灿倍护防晒乳高倍防水防汗清爽户外面部身体防晒60ml",
-        "product_id": "p_beauty_010",
-        "price": 298.0,
-        "brand_name": "安热沙",
-        "category": "美妆护肤",
-        "sub_category": "防晒"
-      }
-    },
-    "brand:安热沙": {
-      "id": "brand:安热沙",
-      "type": "brand",
-      "properties": {
-        "name": "安热沙"
-      }
-    },
-    "product:p_beauty_011": {
-      "id": "product:p_beauty_011",
-      "type": "product",
-      "properties": {
-        "title": "珊珂洗颜专科绵润泡沫洁面乳细腻丰富泡沫温和清洁洁面120g",
-        "product_id": "p_beauty_011",
-        "price": 52.0,
-        "brand_name": "珊珂",
-        "category": "美妆护肤",
-        "sub_category": "洁面"
-      }
-    },
-    "brand:珊珂": {
-      "id": "brand:珊珂",
-      "type": "brand",
-      "properties": {
-        "name": "珊珂"
-      }
-    },
-    "product:p_beauty_012": {
-      "id": "product:p_beauty_012",
-      "type": "product",
-      "properties": {
-        "title": "理肤泉特安舒缓修复霜滋润型敏感肌保湿修护屏障面霜40ml",
-        "product_id": "p_beauty_012",
-        "price": 260.0,
-        "brand_name": "理肤泉",
-        "category": "美妆护肤",
-        "sub_category": "面霜"
-      }
-    },
-    "brand:理肤泉": {
-      "id": "brand:理肤泉",
-      "type": "brand",
-      "properties": {
-        "name": "理肤泉"
-      }
-    },
-    "product:p_beauty_013": {
-      "id": "product:p_beauty_013",
-      "type": "product",
-      "properties": {
-        "title": "方里柔焦蜜粉饼控油定妆细腻粉质隐匿毛孔提亮肤色粉饼7g",
-        "product_id": "p_beauty_013",
-        "price": 99.0,
-        "brand_name": "方里",
-        "category": "美妆护肤",
-        "sub_category": "蜜粉"
-      }
-    },
-    "brand:方里": {
-      "id": "brand:方里",
-      "type": "brand",
-      "properties": {
-        "name": "方里"
-      }
-    },
-    "product:p_beauty_014": {
-      "id": "product:p_beauty_014",
-      "type": "product",
-      "properties": {
-        "title": "花西子空气蜜粉轻盈定妆控油提亮肤色细腻粉质散粉8.5g",
-        "product_id": "p_beauty_014",
-        "price": 169.0,
-        "brand_name": "花西子",
-        "category": "美妆护肤",
-        "sub_category": "蜜粉"
-      }
-    },
-    "brand:花西子": {
-      "id": "brand:花西子",
-      "type": "brand",
-      "properties": {
-        "name": "花西子"
-      }
-    },
-    "product:p_beauty_015": {
-      "id": "product:p_beauty_015",
-      "type": "product",
-      "properties": {
-        "title": "完美日记仿生膜精华唇釉丝绒哑光滋润显色持妆唇部彩妆3g",
-        "product_id": "p_beauty_015",
-        "price": 120.0,
-        "brand_name": "完美日记",
-        "category": "美妆护肤",
-        "sub_category": "唇釉"
-      }
-    },
-    "brand:完美日记": {
-      "id": "brand:完美日记",
-      "type": "brand",
-      "properties": {
-        "name": "完美日记"
-      }
-    },
-    "product:p_beauty_016": {
-      "id": "product:p_beauty_016",
-      "type": "product",
-      "properties": {
-        "title": "AHC塑颜修护全脸眼霜紧致淡纹保湿提亮多效眼周护理30ml",
-        "product_id": "p_beauty_016",
-        "price": 139.0,
-        "brand_name": "AHC",
-        "category": "美妆护肤",
-        "sub_category": "眼霜"
-      }
-    },
-    "brand:AHC": {
-      "id": "brand:AHC",
-      "type": "brand",
-      "properties": {
-        "name": "AHC"
-      }
-    },
-    "product:p_beauty_017": {
-      "id": "product:p_beauty_017",
-      "type": "product",
-      "properties": {
-        "title": "芳珂纳米温和净化卸妆油深层清洁毛孔无添加卸妆液120ml",
-        "product_id": "p_beauty_017",
-        "price": 178.0,
-        "brand_name": "芳珂",
-        "category": "美妆护肤",
-        "sub_category": "卸妆"
-      }
-    },
-    "brand:芳珂": {
-      "id": "brand:芳珂",
-      "type": "brand",
-      "properties": {
-        "name": "芳珂"
-      }
-    },
-    "product:p_beauty_018": {
-      "id": "product:p_beauty_018",
-      "type": "product",
-      "properties": {
-        "title": "The Ordinary烟酰胺10%锌1%精华液平衡油脂淡化毛孔提亮肤色30ml",
-        "product_id": "p_beauty_018",
-        "price": 59.0,
-        "brand_name": "The Ordinary",
-        "category": "美妆护肤",
-        "sub_category": "精华"
-      }
-    },
-    "brand:The Ordinary": {
-      "id": "brand:The Ordinary",
-      "type": "brand",
-      "properties": {
-        "name": "The Ordinary"
-      }
-    },
-    "product:p_beauty_019": {
-      "id": "product:p_beauty_019",
-      "type": "product",
-      "properties": {
-        "title": "兰蔻清滢柔肤水大粉水保湿舒缓干性肌肤柔润爽肤水400ml",
-        "product_id": "p_beauty_019",
-        "price": 582.0,
-        "brand_name": "兰蔻",
-        "category": "美妆护肤",
-        "sub_category": "化妆水"
-      }
-    },
-    "product:p_beauty_020": {
-      "id": "product:p_beauty_020",
-      "type": "product",
-      "properties": {
-        "title": "雅诗兰黛持妆粉底液SPF10PA持久遮瑕控油抗汗清透底妆30ml",
-        "product_id": "p_beauty_020",
-        "price": 440.0,
-        "brand_name": "雅诗兰黛",
-        "category": "美妆护肤",
-        "sub_category": "粉底液"
-      }
-    },
-    "product:p_beauty_021": {
-      "id": "product:p_beauty_021",
-      "type": "product",
-      "properties": {
-        "title": "科颜氏牛油果保湿眼霜滋润补水细腻质地淡化干纹眼周护理28g",
-        "product_id": "p_beauty_021",
-        "price": 320.0,
-        "brand_name": "科颜氏",
-        "category": "美妆护肤",
-        "sub_category": "眼霜"
-      }
-    },
-    "product:p_beauty_022": {
-      "id": "product:p_beauty_022",
-      "type": "product",
-      "properties": {
-        "title": "薇诺娜极润保湿面膜密集补水舒缓修护肌肤屏障涂抹式面膜75g",
-        "product_id": "p_beauty_022",
-        "price": 199.0,
-        "brand_name": "薇诺娜",
-        "category": "美妆护肤",
-        "sub_category": "面膜"
-      }
-    },
-    "product:p_beauty_023": {
-      "id": "product:p_beauty_023",
-      "type": "product",
-      "properties": {
-        "title": "理肤泉特护清盈防晒乳高倍防晒清爽控油易敏肌适用面部防晒50ml",
-        "product_id": "p_beauty_023",
-        "price": 268.0,
-        "brand_name": "理肤泉",
-        "category": "美妆护肤",
-        "sub_category": "防晒"
-      }
-    },
-    "product:p_beauty_024": {
-      "id": "product:p_beauty_024",
-      "type": "product",
-      "properties": {
-        "title": "珀莱雅赋能鲜颜淡纹紧致精华液抗皱紧致提升弹润淡化细纹30ml",
-        "product_id": "p_beauty_024",
-        "price": 300.0,
-        "brand_name": "珀莱雅",
-        "category": "美妆护肤",
-        "sub_category": "精华"
-      }
-    },
-    "product:p_beauty_025": {
-      "id": "product:p_beauty_025",
-      "type": "product",
-      "properties": {
-        "title": "花西子螺黛生花眉笔细节点描顺滑显色防晕染持久双头眉笔0.08g",
-        "product_id": "p_beauty_025",
-        "price": 89.0,
-        "brand_name": "花西子",
-        "category": "美妆护肤",
-        "sub_category": "眉笔"
-      }
     }
   },
   "edges": [
+    {
+      "from": "product:p_beauty_001",
+      "to": "brand:雅诗兰黛",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_001",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_002",
+      "to": "brand:兰蔻",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_002",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_003",
+      "to": "brand:SK-II",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_003",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_004",
+      "to": "brand:资生堂",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_004",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_005",
+      "to": "brand:科颜氏",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_005",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_006",
+      "to": "brand:巴黎欧莱雅",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_006",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_007",
+      "to": "brand:薇诺娜",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_007",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_008",
+      "to": "brand:玉兰油",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_008",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_009",
+      "to": "brand:珀莱雅",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_009",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_010",
+      "to": "brand:安热沙",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_010",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_011",
+      "to": "brand:珊珂",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_011",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_012",
+      "to": "brand:理肤泉",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_012",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_013",
+      "to": "brand:方里",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_013",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_014",
+      "to": "brand:花西子",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_014",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_015",
+      "to": "brand:完美日记",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_015",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_016",
+      "to": "brand:AHC",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_016",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_017",
+      "to": "brand:芳珂",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_017",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_018",
+      "to": "brand:The Ordinary",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_018",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_019",
+      "to": "brand:兰蔻",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_019",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_020",
+      "to": "brand:雅诗兰黛",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_020",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_021",
+      "to": "brand:科颜氏",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_021",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_022",
+      "to": "brand:薇诺娜",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_022",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_023",
+      "to": "brand:理肤泉",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_023",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_024",
+      "to": "brand:珀莱雅",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_024",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_025",
+      "to": "brand:花西子",
+      "relation": "belongs_to_brand",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_025",
+      "to": "category:美妆护肤",
+      "relation": "belongs_to_category",
+      "properties": {}
+    },
     {
       "from": "product:p_clothes_001",
       "to": "brand:优衣库",
@@ -2558,6 +2858,186 @@
       "properties": {}
     },
     {
+      "from": "product:p_beauty_001",
+      "to": "product:p_beauty_002",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_001",
+      "to": "product:p_beauty_004",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_001",
+      "to": "product:p_beauty_005",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_001",
+      "to": "product:p_beauty_009",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_001",
+      "to": "product:p_beauty_018",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_001",
+      "to": "product:p_beauty_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_002",
+      "to": "product:p_beauty_004",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_002",
+      "to": "product:p_beauty_005",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_002",
+      "to": "product:p_beauty_009",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_002",
+      "to": "product:p_beauty_018",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_002",
+      "to": "product:p_beauty_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_004",
+      "to": "product:p_beauty_005",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_004",
+      "to": "product:p_beauty_009",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_004",
+      "to": "product:p_beauty_018",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_004",
+      "to": "product:p_beauty_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_005",
+      "to": "product:p_beauty_009",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_005",
+      "to": "product:p_beauty_018",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_005",
+      "to": "product:p_beauty_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_009",
+      "to": "product:p_beauty_018",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_009",
+      "to": "product:p_beauty_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_018",
+      "to": "product:p_beauty_024",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_003",
+      "to": "product:p_beauty_019",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_006",
+      "to": "product:p_beauty_010",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_006",
+      "to": "product:p_beauty_023",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_010",
+      "to": "product:p_beauty_023",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_007",
+      "to": "product:p_beauty_008",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_007",
+      "to": "product:p_beauty_012",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_008",
+      "to": "product:p_beauty_012",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_013",
+      "to": "product:p_beauty_014",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
+      "from": "product:p_beauty_016",
+      "to": "product:p_beauty_021",
+      "relation": "same_sub_category",
+      "properties": {}
+    },
+    {
       "from": "product:p_clothes_001",
       "to": "product:p_clothes_002",
       "relation": "same_sub_category",
@@ -3304,486 +3784,6 @@
     {
       "from": "product:p_food_013",
       "to": "product:p_food_018",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_001",
-      "to": "brand:雅诗兰黛",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_001",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_002",
-      "to": "brand:兰蔻",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_002",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_003",
-      "to": "brand:SK-II",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_003",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_004",
-      "to": "brand:资生堂",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_004",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_005",
-      "to": "brand:科颜氏",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_005",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_006",
-      "to": "brand:巴黎欧莱雅",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_006",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_007",
-      "to": "brand:薇诺娜",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_007",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_008",
-      "to": "brand:玉兰油",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_008",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_009",
-      "to": "brand:珀莱雅",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_009",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_010",
-      "to": "brand:安热沙",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_010",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_011",
-      "to": "brand:珊珂",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_011",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_012",
-      "to": "brand:理肤泉",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_012",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_013",
-      "to": "brand:方里",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_013",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_014",
-      "to": "brand:花西子",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_014",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_015",
-      "to": "brand:完美日记",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_015",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_016",
-      "to": "brand:AHC",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_016",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_017",
-      "to": "brand:芳珂",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_017",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_018",
-      "to": "brand:The Ordinary",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_018",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_019",
-      "to": "brand:兰蔻",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_019",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_020",
-      "to": "brand:雅诗兰黛",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_020",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_021",
-      "to": "brand:科颜氏",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_021",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_022",
-      "to": "brand:薇诺娜",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_022",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_023",
-      "to": "brand:理肤泉",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_023",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_024",
-      "to": "brand:珀莱雅",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_024",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_025",
-      "to": "brand:花西子",
-      "relation": "belongs_to_brand",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_025",
-      "to": "category:美妆护肤",
-      "relation": "belongs_to_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_001",
-      "to": "product:p_beauty_002",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_001",
-      "to": "product:p_beauty_004",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_001",
-      "to": "product:p_beauty_005",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_001",
-      "to": "product:p_beauty_009",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_001",
-      "to": "product:p_beauty_018",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_001",
-      "to": "product:p_beauty_024",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_002",
-      "to": "product:p_beauty_004",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_002",
-      "to": "product:p_beauty_005",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_002",
-      "to": "product:p_beauty_009",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_002",
-      "to": "product:p_beauty_018",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_002",
-      "to": "product:p_beauty_024",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_004",
-      "to": "product:p_beauty_005",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_004",
-      "to": "product:p_beauty_009",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_004",
-      "to": "product:p_beauty_018",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_004",
-      "to": "product:p_beauty_024",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_005",
-      "to": "product:p_beauty_009",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_005",
-      "to": "product:p_beauty_018",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_005",
-      "to": "product:p_beauty_024",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_009",
-      "to": "product:p_beauty_018",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_009",
-      "to": "product:p_beauty_024",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_018",
-      "to": "product:p_beauty_024",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_003",
-      "to": "product:p_beauty_019",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_006",
-      "to": "product:p_beauty_010",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_006",
-      "to": "product:p_beauty_023",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_010",
-      "to": "product:p_beauty_023",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_007",
-      "to": "product:p_beauty_008",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_007",
-      "to": "product:p_beauty_012",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_008",
-      "to": "product:p_beauty_012",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_013",
-      "to": "product:p_beauty_014",
-      "relation": "same_sub_category",
-      "properties": {}
-    },
-    {
-      "from": "product:p_beauty_016",
-      "to": "product:p_beauty_021",
       "relation": "same_sub_category",
       "properties": {}
     }

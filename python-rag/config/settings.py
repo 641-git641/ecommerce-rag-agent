@@ -44,7 +44,7 @@ class Settings:
     # 文本分块和检索配置
     CHUNK_SIZE: int = 800  # Qwen3-Embedding支持8192上下文，可以用更大分块
     CHUNK_OVERLAP: int = 100  # 分块重叠大小
-    RETRIEVAL_K: int = 3  # 检索返回的文档数量
+    RETRIEVAL_K: int = 5  # 检索返回的文档数量（3→5: 平衡召回率和精确度，避免过多上下文导致生成答案过长）
     
     # 服务器配置
     SERVER_HOST: str = "0.0.0.0"

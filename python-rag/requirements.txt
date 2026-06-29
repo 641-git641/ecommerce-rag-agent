@@ -13,3 +13,6 @@ tiktoken>=0.5.0
 python-dotenv>=1.0.0
 dashscope>=1.20.0
 websocket-client>=1.8.0
+ragas>=0.2.0,<0.5.0
+datasets>=2.0.0
+jieba>=0.42

@@ -1,26 +1,12 @@
 package com.ecommerce.ragagent.data.api
 
-import com.ecommerce.ragagent.data.model.AgentQueryRequest
-import com.ecommerce.ragagent.data.model.AgentQueryResponse
 import com.ecommerce.ragagent.data.model.ChatRequest
-import com.ecommerce.ragagent.data.model.ChatResponse
 import com.google.gson.Gson
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.channels.awaitClose
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.callbackFlow
-import kotlinx.coroutines.flow.flowOn
-import kotlinx.coroutines.withContext
-import okhttp3.MediaType
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.RequestBody
-import okhttp3.ResponseBody
 import okhttp3.sse.EventSource
 import okhttp3.sse.EventSourceListener
 import okhttp3.sse.EventSources
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.converter.scalars.ScalarsConverterFactory
 
 class SSEClient(
     private val baseUrl: String
@@ -48,21 +34,10 @@ class SSEClient(
         onDone: (sources: List<String>?) -> Unit,
         onError: (Throwable) -> Unit
     ): EventSource {
-        val retrofit = Retrofit.Builder()
-            .baseUrl(baseUrl)
-            .client(okhttp3.OkHttpClient())
-            .addConverterFactory(ScalarsConverterFactory.create())
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-        
-        val api = retrofit.create(GoServerApi::class.java)
-        
         val mediaType = "application/json; charset=utf-8".toMediaType()
         val jsonBody = gson.toJson(request)
         val requestBody = RequestBody.create(mediaType, jsonBody)
-        
-        val call = api.streamChat(ChatRequest(request.question, request.sessionId))
-        
+
         return eventSourceFactory!!.newEventSource(
             okhttp3.Request.Builder()
                 .url("${baseUrl}api/chat/stream")
@@ -111,16 +86,7 @@ class SSEClient(
 class SSEClientFactory(
     private val baseUrl: String
 ) {
-    fun create(
-        question: String,
-        sessionId: String,
-        onMessage: (String) -> Unit,
-        onDone: (List<String>?) -> Unit,
-        onError: (Throwable) -> Unit
-    ): SSEClient {
-        val client = SSEClient(baseUrl)
-        val request = ChatRequest(question, sessionId)
-        client.streamChat(request, onMessage, onDone, onError)
-        return client
+    fun create(): SSEClient {
+        return SSEClient(baseUrl)
     }
 }

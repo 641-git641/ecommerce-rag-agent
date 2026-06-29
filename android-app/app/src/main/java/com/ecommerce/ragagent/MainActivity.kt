@@ -28,8 +28,8 @@ import com.ecommerce.ragagent.ui.cart.CartActivity
 import com.ecommerce.ragagent.ui.chat.ChatFragment
 import com.ecommerce.ragagent.ui.chat.SelectedCardAdapter
 import com.ecommerce.ragagent.ui.chat.SessionListAdapter
+import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import com.ecommerce.ragagent.data.repository.ChatRepository
 import com.bumptech.glide.Glide
@@ -199,6 +199,11 @@ class MainActivity : AppCompatActivity() {
             chatFragment?.imagePickerLauncher?.launch("image/*")
         }
 
+        // ── 输入栏：拍照 ──
+        binding.inputBar.btnCameraInput.setOnClickListener {
+            chatFragment?.launchCamera()
+        }
+
         // ── 输入栏：移除图片缩略图 ──
         binding.inputBar.btnRemoveImage.setOnClickListener {
             clearImagePreview()
@@ -280,7 +285,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadSessionList() {
-        GlobalScope.launch(Dispatchers.Main) {
+        lifecycleScope.launch(Dispatchers.Main) {
             try {
                 val resp = ApiClient.getApi().getSessions()
                 if (resp.isSuccessful) {
@@ -296,7 +301,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadSessionFromBackend(session: SessionSummary) {
-        GlobalScope.launch(Dispatchers.Main) {
+        lifecycleScope.launch(Dispatchers.Main) {
             try {
                 val resp = ApiClient.getApi().getSessionHistory(session.id)
                 if (resp.isSuccessful) {
@@ -309,7 +314,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun deleteSessionFromBackend(session: SessionSummary) {
-        GlobalScope.launch(Dispatchers.Main) {
+        lifecycleScope.launch(Dispatchers.Main) {
             try {
                 val resp = ApiClient.getApi().deleteSession(session.id)
                 if (resp.isSuccessful) { loadSessionList(); Toast.makeText(this@MainActivity, "已删除", Toast.LENGTH_SHORT).show() }
@@ -415,7 +420,7 @@ class MainActivity : AppCompatActivity() {
         val name = wavFile.name
 
         val repo = ChatRepository()
-        GlobalScope.launch(Dispatchers.Main) {
+        lifecycleScope.launch(Dispatchers.Main) {
             hideVoicePanel()
             val result = kotlinx.coroutines.withContext(Dispatchers.IO) {
                 repo.sendAsr(bytes, name)

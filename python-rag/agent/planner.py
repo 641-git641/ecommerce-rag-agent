@@ -180,7 +180,7 @@ def decide(llm_service, query: str, history: List[Dict[str, Any]], intent: str =
 
     prompt = build_react_prompt(query, history, intent=intent)
     try:
-        raw = llm_service.chat(prompt, temperature=0.1)
+        raw = llm_service.chat(prompt, temperature=0.1, purpose="react_decide")
         json_str = extract_json(raw)
         decision = json.loads(json_str)
         if "action" not in decision:

@@ -80,6 +80,9 @@ class DocumentProcessor:
                 "type": "basic_info",
                 "product_id": product_id,
                 "base_price": base_price,
+                "brand": brand,
+                "category": category,
+                "sub_category": sub_category,
             }
         ))
 
@@ -105,6 +108,9 @@ class DocumentProcessor:
                     "type": "sku_info",
                     "product_id": product_id,
                     "base_price": base_price,
+                    "brand": brand,
+                    "category": category,
+                    "sub_category": sub_category,
                 }
             ))
 
@@ -123,19 +129,29 @@ class DocumentProcessor:
                     "type": "marketing",
                     "product_id": product_id,
                     "base_price": base_price,
+                    "brand": brand,
+                    "category": category,
+                    "sub_category": sub_category,
                 }
             ))
 
-        # 片段4：官方FAQ — 单路优化。只用问题文本做嵌入（保证召回质量），完整FAQ存metadata供上下文构建
+        # 片段4：官方FAQ — 双路优化。问题+答案摘要做嵌入（提升召回质量），完整FAQ存metadata供上下文构建
         official_faq = rag_knowledge.get("official_faq", [])
         for i, faq in enumerate(official_faq):
             q = faq.get("question", "")
             a = faq.get("answer", "")
 
-            # page_content 只放问题文本（用于向量嵌入，匹配用户问句）
-            faq_embedding_text = f"""【FAQ】
+            # 纯问题文本（type=faq_q）：短文本精确匹配，召回时排名靠前保证精度
+            faq_q_text = f"""【FAQ问题】
 商品: {title}
 问题: {q}
+"""
+            # 问题 + 答案摘要（type=faq）：语义覆盖更广，召回同义不同问法的查询
+            answer_summary = a[:80] + "…" if len(a) > 80 else a
+            faq_qa_text = f"""【FAQ】
+商品: {title}
+问题: {q}
+解答: {answer_summary}
 """
             # faq_answer 存完整问答（供 _build_context 读取给 LLM）
             faq_full_text = f"""【FAQ-完整解答】
@@ -143,8 +159,24 @@ class DocumentProcessor:
 问题: {q}
 回答: {a}
 """
+            # Chunk A: 纯问题（精度优先）
             docs.append(Document(
-                page_content=faq_embedding_text.strip(),
+                page_content=faq_q_text.strip(),
+                metadata={
+                    "source": filename,
+                    "type": "faq_q",
+                    "product_id": product_id,
+                    "faq_index": i,
+                    "faq_answer": faq_full_text,
+                    "base_price": base_price,
+                    "brand": brand,
+                    "category": category,
+                    "sub_category": sub_category,
+                }
+            ))
+            # Chunk B: 问题+答案摘要（覆盖优先）
+            docs.append(Document(
+                page_content=faq_qa_text.strip(),
                 metadata={
                     "source": filename,
                     "type": "faq",
@@ -152,6 +184,9 @@ class DocumentProcessor:
                     "faq_index": i,
                     "faq_answer": faq_full_text,
                     "base_price": base_price,
+                    "brand": brand,
+                    "category": category,
+                    "sub_category": sub_category,
                 }
             ))
 
@@ -175,6 +210,9 @@ class DocumentProcessor:
                     "product_id": product_id,
                     "review_index": i,
                     "base_price": base_price,
+                    "brand": brand,
+                    "category": category,
+                    "sub_category": sub_category,
                 }
             ))
 

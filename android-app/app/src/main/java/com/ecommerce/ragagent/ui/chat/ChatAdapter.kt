@@ -3,7 +3,6 @@ package com.ecommerce.ragagent.ui.chat
 import android.content.Context
 import android.media.AudioAttributes
 import android.media.MediaPlayer
-import android.speech.tts.TextToSpeech
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,6 +25,14 @@ class ChatAdapter : ListAdapter<ChatMessage, ChatAdapter.ChatViewHolder>(ChatDif
 
     var onProductCardClickListener: ((ProductCard) -> Unit)? = null
 
+    /** TTS speak callback — caller manages TextToSpeech lifecycle */
+    var onTtsSpeak: ((Context, String) -> Unit)? = null
+
+    /** Nullify the TTS callback to release any captured references */
+    fun releaseTts() {
+        onTtsSpeak = null
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_chat_message, parent, false)
@@ -33,7 +40,7 @@ class ChatAdapter : ListAdapter<ChatMessage, ChatAdapter.ChatViewHolder>(ChatDif
     }
 
     override fun onBindViewHolder(holder: ChatViewHolder, position: Int) {
-        holder.bind(getItem(position), onProductCardClickListener)
+        holder.bind(getItem(position), onProductCardClickListener, onTtsSpeak)
     }
 
     class ChatViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -53,7 +60,7 @@ class ChatAdapter : ListAdapter<ChatMessage, ChatAdapter.ChatViewHolder>(ChatDif
 
         private var mediaPlayer: MediaPlayer? = null
 
-        fun bind(message: ChatMessage, clickListener: ((ProductCard) -> Unit)?) {
+        fun bind(message: ChatMessage, clickListener: ((ProductCard) -> Unit)?, ttsCallback: ((Context, String) -> Unit)?) {
             tvContent.text = message.content
             tvContent.visibility = if (message.content.isEmpty()) View.GONE else View.VISIBLE
 
@@ -84,10 +91,10 @@ class ChatAdapter : ListAdapter<ChatMessage, ChatAdapter.ChatViewHolder>(ChatDif
                         playVoice(message.voiceUrl)
                     }
                 } else if (!message.voiceText.isNullOrEmpty()) {
-                    // 无音频但有播报文本 → 使用 Android TTS
+                    // 无音频但有播报文本 → 使用 Android TTS（由调用方管理生命周期）
                     btnVoicePlay.visibility = View.VISIBLE
                     btnVoicePlay.setOnClickListener {
-                        speakText(itemView.context, message.voiceText)
+                        ttsCallback?.invoke(itemView.context, message.voiceText!!)
                     }
                 } else {
                     btnVoicePlay.visibility = View.GONE
@@ -214,22 +221,6 @@ class ChatAdapter : ListAdapter<ChatMessage, ChatAdapter.ChatViewHolder>(ChatDif
             mediaPlayer = null
         }
 
-        companion object {
-            private var ttsInstance: TextToSpeech? = null
-
-            fun speakText(context: Context, text: String) {
-                if (ttsInstance == null) {
-                    ttsInstance = TextToSpeech(context) { status ->
-                        if (status == TextToSpeech.SUCCESS) {
-                            ttsInstance?.language = java.util.Locale.CHINESE
-                            ttsInstance?.speak(text, TextToSpeech.QUEUE_FLUSH, null, "chat_tts")
-                        }
-                    }
-                } else {
-                    ttsInstance?.speak(text, TextToSpeech.QUEUE_FLUSH, null, "chat_tts")
-                }
-            }
-        }
     }
 
     class ProductCardAdapter(
@@ -315,7 +306,7 @@ class ChatAdapter : ListAdapter<ChatMessage, ChatAdapter.ChatViewHolder>(ChatDif
 
     class ChatDiffCallback : DiffUtil.ItemCallback<ChatMessage>() {
         override fun areItemsTheSame(oldItem: ChatMessage, newItem: ChatMessage): Boolean {
-            return oldItem.timestamp == newItem.timestamp
+            return oldItem.id == newItem.id
         }
 
         override fun areContentsTheSame(oldItem: ChatMessage, newItem: ChatMessage): Boolean {

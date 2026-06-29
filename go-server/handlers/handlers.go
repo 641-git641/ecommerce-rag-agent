@@ -24,15 +24,18 @@ type Handler struct {
 }
 
 // NewHandler 创建处理器，配置 SSE 流代理支持
-func NewHandler(targetURL string, sess *store.SessionStore) *Handler {
-	target, _ := url.Parse(targetURL)
+func NewHandler(targetURL string, sess *store.SessionStore) (*Handler, error) {
+	target, err := url.Parse(targetURL)
+	if err != nil {
+		return nil, err
+	}
 	proxy := httputil.NewSingleHostReverseProxy(target)
 	// 启用定期刷新以支持 SSE 流式传输
 	proxy.FlushInterval = 50 * time.Millisecond
 	return &Handler{
 		proxy:   proxy,
 		session: sess,
-	}
+	}, nil
 }
 
 // ── 反向代理 ────────────────────────────────────────────────
@@ -98,7 +101,10 @@ func (h *Handler) GetSessionHistory(c *gin.Context) {
 // DeleteSession DELETE /api/sessions/:id
 func (h *Handler) DeleteSession(c *gin.Context) {
 	id := c.Param("id")
-	h.session.Delete(id)
+	if err := h.session.Delete(id); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
 	c.JSON(http.StatusOK, gin.H{"ok": true})
 }
 
@@ -115,6 +121,9 @@ func (h *Handler) SaveSessionMessage(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
-	h.session.SaveMessage(id, req.Role, req.Content, req.Cards, req.VoiceUrl)
+	if err := h.session.SaveMessage(id, req.Role, req.Content, req.Cards, req.VoiceUrl); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
 	c.JSON(http.StatusOK, gin.H{"ok": true})
 }

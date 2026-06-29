@@ -20,7 +20,8 @@ from pydantic import BaseModel
 
 from .intent import classify_query, is_vague_query
 from .graph_filter import build_graph_filter
-from api.routes import rag_stream_events, _enrich_recommendations, _save_session_message
+from api.routes import rag_stream_events
+from shared.stream_utils import _enrich_recommendations, _save_session_message
 from memory import get_memory
 
 
@@ -386,7 +387,7 @@ def create_router() -> APIRouter:
                     full_text += chunk
 
                 # 解析 + 渲染（与 RAG 一致）
-                from api.routes import _parse_stream_structured
+                from shared.stream_utils import _parse_stream_structured
                 parsed = _parse_stream_structured(full_text)
                 answer_text = parsed['answer_text']
                 recommendations = parsed["recommendations"]

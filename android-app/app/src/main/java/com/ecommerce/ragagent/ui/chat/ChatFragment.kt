@@ -3,11 +3,14 @@ package com.ecommerce.ragagent.ui.chat
 import android.content.Context
 import android.net.Uri
 import android.os.Bundle
+import android.os.Environment
+import android.speech.tts.TextToSpeech
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -16,6 +19,10 @@ import com.ecommerce.ragagent.data.model.ChatMessage
 import com.ecommerce.ragagent.data.model.ProductCard
 import com.ecommerce.ragagent.R
 import com.ecommerce.ragagent.databinding.FragmentChatBinding
+import java.io.File
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class ChatFragment : Fragment() {
 
@@ -24,6 +31,7 @@ class ChatFragment : Fragment() {
 
     private val viewModel: ChatViewModel by viewModels()
     private lateinit var chatAdapter: ChatAdapter
+    private var tts: TextToSpeech? = null
 
     /** 回调接口，与 MainActivity 通信 */
     var onCardAdded: ((ProductCard) -> Unit)? = null
@@ -37,6 +45,52 @@ class ChatFragment : Fragment() {
             selectedImageUri = it
             onImageReady?.invoke(it)
         }
+    }
+
+    /** 拍照临时 URI（FileProvider 生成） */
+    private var cameraPhotoUri: Uri? = null
+    var cameraLauncher = registerForActivityResult(
+        ActivityResultContracts.TakePicture()
+    ) { success ->
+        if (success) {
+            cameraPhotoUri?.let { uri ->
+                selectedImageUri = uri
+                onImageReady?.invoke(uri)
+            }
+        }
+    }
+
+    /** 打开相机拍照，由 MainActivity 调用。无相机时回退到图片选择器 */
+    fun launchCamera() {
+        try {
+            val ctx = context ?: return
+            val photoFile = createCameraTempFile()
+            cameraPhotoUri = FileProvider.getUriForFile(
+                ctx,
+                "${ctx.packageName}.fileprovider",
+                photoFile
+            )
+
+            // 检查是否有相机 App；没有则回退到图片选择器
+            val cameraIntent = android.content.Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE)
+            if (cameraIntent.resolveActivity(ctx.packageManager) != null) {
+                cameraLauncher.launch(cameraPhotoUri!!)
+            } else {
+                // 模拟器无相机时自动回退到相册选图
+                Toast.makeText(ctx, "当前设备无相机，已切换为图片上传", Toast.LENGTH_SHORT).show()
+                imagePickerLauncher.launch("image/*")
+            }
+        } catch (e: Exception) {
+            Toast.makeText(context, "无法启动相机: ${e.message}", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    /** 创建摄像头拍照的临时文件 */
+    private fun createCameraTempFile(): File {
+        val dir = File(requireContext().cacheDir, "camera_photos")
+        if (!dir.exists()) dir.mkdirs()
+        val timestamp = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US).format(Date())
+        return File(dir, "IMG_$timestamp.jpg")
     }
 
     /** 让 MainActivity 知道图片已就绪 */
@@ -79,6 +133,18 @@ class ChatFragment : Fragment() {
             } else {
                 onCardLimitReached?.invoke()
                 Toast.makeText(requireContext(), R.string.max_cards_hint, Toast.LENGTH_SHORT).show()
+            }
+        }
+        chatAdapter.onTtsSpeak = { context, text ->
+            if (tts == null) {
+                tts = TextToSpeech(context) { status ->
+                    if (status == TextToSpeech.SUCCESS) {
+                        tts?.language = java.util.Locale.CHINESE
+                        tts?.speak(text, TextToSpeech.QUEUE_FLUSH, null, "chat_tts")
+                    }
+                }
+            } else {
+                tts?.speak(text, TextToSpeech.QUEUE_FLUSH, null, "chat_tts")
             }
         }
         val rv = binding.rvMessages
@@ -199,6 +265,9 @@ class ChatFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
+        chatAdapter.releaseTts()
+        tts?.apply { stop(); shutdown() }
+        tts = null
         _binding = null
     }
 }

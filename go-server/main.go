@@ -8,9 +8,14 @@
 package main
 
 import (
+	"context"
 	"log"
 	"net/http"
+	"os"
+	"os/signal"
 	"strings"
+	"syscall"
+	"time"
 
 	"ecommerce-rag-agent/go-server/config"
 	"ecommerce-rag-agent/go-server/db"
@@ -33,7 +38,10 @@ func main() {
 	// 会话持久化（MySQL）
 	sess := store.NewSessionStore(mysqlDB)
 
-	h := handlers.NewHandler(cfg.PythonRAG.BaseURL, sess)
+	h, err := handlers.NewHandler(cfg.PythonRAG.BaseURL, sess)
+	if err != nil {
+		log.Fatalf("[Gateway] 代理目标 URL 解析失败: %v", err)
+	}
 
 	// 购物车持久化（MySQL，复用同一连接池）
 	cartStore := store.NewCartStore(mysqlDB)
@@ -78,6 +86,28 @@ func main() {
 		c.JSON(http.StatusNotFound, gin.H{"error": "not found"})
 	})
 
-	println("[Gateway] 启动中... 目标: " + cfg.PythonRAG.BaseURL + " 端口: " + cfg.Server.Port)
-	r.Run(cfg.Server.Port)
+	log.Printf("[Gateway] 启动中... 目标: %s 端口: %s", cfg.PythonRAG.BaseURL, cfg.Server.Port)
+
+	srv := &http.Server{
+		Addr:    cfg.Server.Port,
+		Handler: r,
+	}
+
+	go func() {
+		if err := srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
+			log.Fatalf("[Gateway] 启动失败: %v", err)
+		}
+	}()
+
+	quit := make(chan os.Signal, 1)
+	signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
+	<-quit
+	log.Println("[Gateway] 正在优雅关闭...")
+
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancel()
+	if err := srv.Shutdown(ctx); err != nil {
+		log.Fatalf("[Gateway] 关闭失败: %v", err)
+	}
+	log.Println("[Gateway] 已关闭")
 }

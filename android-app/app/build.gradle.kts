@@ -43,7 +43,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "HOST_IP", "\"${getHostIp()}\"")
+        buildConfigField("String", "HOST_IP", "\"127.0.0.1\"")
     }
 
     buildTypes {

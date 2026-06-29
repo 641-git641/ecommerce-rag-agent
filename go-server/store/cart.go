@@ -6,6 +6,7 @@ package store
 import (
 	"database/sql"
 	"fmt"
+	"strings"
 	"time"
 
 	"github.com/google/uuid"
@@ -156,6 +157,9 @@ func (s *CartStore) List(userID string) (*CartSummary, error) {
 			summary.Total += item.Price * float64(item.Quantity)
 		}
 	}
+	if err := rows.Err(); err != nil {
+		return nil, fmt.Errorf("iterate cart rows: %w", err)
+	}
 	return summary, nil
 }
 
@@ -173,6 +177,9 @@ func (s *CartStore) FindByIndex(userID string, index int) (*CartItem, error) {
 
 // FindByName 按名称模糊匹配购物车中的商品
 func (s *CartStore) FindByName(userID, name string) (*CartItem, error) {
+	name = strings.ReplaceAll(name, "\\", "\\\\")
+	name = strings.ReplaceAll(name, "%", "\\%")
+	name = strings.ReplaceAll(name, "_", "\\_")
 	rows, err := s.db.Query(`
 		SELECT id, product_id, product_name, price, quantity, selected
 		FROM cart_items WHERE user_id=? AND product_name LIKE ?
@@ -190,6 +197,9 @@ func (s *CartStore) FindByName(userID, name string) (*CartItem, error) {
 	if err := rows.Scan(&item.ID, &item.ProductID, &item.ProductName,
 		&item.Price, &item.Quantity, &item.Selected); err != nil {
 		return nil, fmt.Errorf("scan item: %w", err)
+	}
+	if err := rows.Err(); err != nil {
+		return nil, fmt.Errorf("iterate find-by-name rows: %w", err)
 	}
 	return &item, nil
 }
